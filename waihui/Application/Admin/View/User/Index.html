@@ -1,0 +1,93 @@
+    <include file="Base/css"/>
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <include file="Base/navbar"/>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <include file="Base/sidebar"/>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <h3 class="page-title">用户管理</h3>
+                <div>
+                    <!-- BORDERED TABLE -->
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3 class="panel-title">用户信息表</h3>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <a <if condition="$verifyCount">href="__CONTROLLER__/verify"</if> class="btn btn-primary" type="button">
+                                        实名认证请求 <span class="badge">{$verifyCount}</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>ID号</th>
+                                    <th>用户昵称</th>
+                                    <th>手机号码</th>
+                                    <th>真实姓名</th>
+                                    <th>余额</th>
+                                    <th>最后登陆时间</th>
+                                    <th width="220">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="users" id="user" empty="$empty">
+                                <tr class="user-table-font-size">
+                                    <td>{$user.id}</td>
+                                    <td>{$user.username}</td>
+                                    <td>{$user.phone}</td>
+                                    <td>{$user.true_name|showUserTrueName}</td>
+                                    <td>￥{$user.money}</td>
+                                    <td>{$user.login_time|showDateTime}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger" data-id="{$user.id}" title="删除该用户" onclick="delData(this)">
+                                            <i class="fa fa-trash" aria-hidden="true"></i> 删除
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-id="{$user.id}" title="查看用户详情" onclick="showData(this)">
+                                            <i class="fa fa-eye" aria-hidden="true"></i> 查看
+                                        </button>
+                                    </td>
+                                </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+
+                            <div class="pages">
+                                {$page}
+                            </div>
+                        </div>
+                        <!-- END BORDERED TABLE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <include file="Base/footer"/>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<include file="Base/script"/>
+<script>
+    const SCOPE = {
+        updatePwdUrl: '__MODULE__/admin/update',
+        deleteDataUrl: '__CONTROLLER__/del',
+        showDataUrl: '__CONTROLLER__/detail'
+    };
+</script>
+</body>
+</html>

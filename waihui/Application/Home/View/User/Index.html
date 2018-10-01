@@ -1,0 +1,67 @@
+<include file="Base/css"/>
+
+<body class="me">
+<!-- 头部 -->
+<include file="Base/header"/>
+<div class="main_box">
+    <!-- 左侧栏 -->
+    <include file="Base/user_sidebar"/>
+    <!-- 中间主体 -->
+    <div class="usermain">
+        <div class="my_info">
+            <div class="my_info_inner">
+                <img class="my_icon" id="my_icon" src="__PUBLIC__{$Think.session.user.head_img}" alt="我的头像">
+                <div class="revise" onclick="f.click()"><i class="revise"></i>修改头像</div>
+                <input type="file" id="f" name="f" onchange="sc(this);" style="display:none"/>
+                <div class="my_name">ID: {$Think.session.user.id}</div>
+                <div class="my_name">当前昵称：{$Think.session.user.username}</div>
+                <div class="my_name">手机号码：{$Think.session.user.phone}</div>
+                <div class="my_name">余额：{$Think.session.user.money} (保证金：{$Think.session.user.margin})</div>
+                <div class="my_name">实名认证：{$Think.session.user.status|userVerify}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页脚 -->
+<include file="Base/footer"/>
+
+<include file="Base/script"/>
+
+<script type="text/javascript">
+    function sc() {
+        var file = $('#f').get(0).files[0];
+        var data = new FormData();
+        data.append('area_img', file);
+        $.ajax({
+            url: "/Admin/Image/userUpload",
+            type: 'POST',
+            data: data,
+            dataType: 'JSON',
+            cache: false,
+            processData: false,
+            contentType: false,
+            error: function (err) {
+                layer.msg('请求失败');
+            }
+        }).done(function (res) {
+            if (res.code === 0) {
+                $('#my_icon').attr('src', '__PUBLIC__' + res.url);
+                $.post('__CONTROLLER__/updateHeadImg', {headImg: res.url}, function (res) {
+                    if (res.code === 0) {
+                        layer.msg(res.msg);
+                    } else {
+                        layer.msg(res.msg);
+                    }
+                }, 'json')
+                    .error(function (err) {
+                        layer.msg('请求失败');
+                    });
+            } else {
+                layer.msg(res.msg);
+            }
+        });
+        return false;
+    }
+</script>
+</body>
+</html>

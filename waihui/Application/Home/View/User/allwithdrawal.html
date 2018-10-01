@@ -1,0 +1,116 @@
+<include file="Base/css"/>
+<link rel="stylesheet" href="__PUBLIC__/admin/css/bootstrap.min.css">
+
+<body class="me">
+<!-- 头部 -->
+<include file="Base/header"/>
+<div class="main_box">
+    <!-- 左侧栏 -->
+    <include file="Base/user_sidebar"/>
+    <!-- 中间主体 -->
+    <div class="usermain right_userpay">
+        <div class="chongzhi">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th class="text-center" width="80">提现单号</th>
+                    <th class="text-center" width="80">提现金额</th>
+                    <th class="text-center">提现信息</th>
+                    <th class="text-center" width="100">提现状态</th>
+                    <th class="text-center" width="150">创建时间</th>
+                    <th class="text-center" width="100">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="withdrawals" id="withdrawal">
+                    <tr class="text-center">
+                        <td>{$withdrawal.withdrawal_id}</td>
+                        <td>￥{$withdrawal.money}</td>
+                        <td>{$withdrawal.msg}</td>
+                        <td>{$withdrawal.status|showWithdrawalStatus}</td>
+                        <td>{$withdrawal.create_time|showDateTime}</td>
+                        <td>
+                            <button type="button" class="btn btn-danger" <if condition="$withdrawal.status eq 1">disabled</if> onclick="delWithdrawal(this)" data-id="{$withdrawal.withdrawal_id}">删除</button>
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <if condition="$withdrawals">
+                <div class="text-center">
+                    <div class="pages">
+                        {$page}
+                    </div>
+                </div>
+            </if>
+        </div>
+    </div>
+</div>
+<!-- 页脚 -->
+<include file="Base/footer"/>
+
+<include file="Base/script"/>
+<script>
+    function delWithdrawal(ref) {
+        var id = $(ref).attr('data-id');
+        layer.open({
+            icon: 3,
+            content: '是否删除提现单号为 "' + id + '"的数据？',
+            btn: ['确定', '取消'],
+            yes: function (index, layero) {
+                $.post('__CONTROLLER__/delwithdrawal', {id: id}, function (res) {
+                    if (res.code === 0) {
+                        layer.open({
+                            icon: 1,
+                            content: res.msg
+                        });
+                        $(ref).parent().parent().remove();
+                    } else {
+                        layer.open({
+                            icon: 2,
+                            content: res.msg
+                        })
+                    }
+                }, 'json').error(function (err) {
+                    layer.open({
+                        icon: 2,
+                        content: '请求失败'
+                    })
+                });
+            }
+        });
+    }
+
+    function dowithdrawal() {
+        var formData = new FormData(document.getElementById('form'));
+        $.ajax({
+            url: '__CONTROLLER__/dowithdrawal',
+            type: 'post',
+            data: formData,
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            success: function (res) {
+                if (res.code === 0) {
+                    layer.open({
+                        icon: 1,
+                        content: res.msg
+                    });
+                } else {
+                    layer.open({
+                        icon: 2,
+                        content: res.msg
+                    });
+                }
+            },
+            error: function (err) {
+                layer.open({
+                    icon: 2,
+                    content: '请求失败'
+                });
+            }
+        });
+    }
+</script>
+</body>
+</html>

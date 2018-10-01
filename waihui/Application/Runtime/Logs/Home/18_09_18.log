@@ -1,0 +1,3600 @@
+[ 2018-09-18T10:21:47+08:00 ] 127.0.0.1 /Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+
+[ 2018-09-18T10:21:47+08:00 ] 127.0.0.1 /Home/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000541s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2018-09-18T10:21:50+08:00 ] 127.0.0.1 /index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.4725s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '15505952139' LIMIT 1   [ RunTime:0.0232s ]
+SQL: UPDATE `user` SET `username`='ljw',`phone`='15505952139',`password`='4f03521c96230519e860802b3d5fca9e',`head_img`='/upload/user/default-user.jpg',`bank_card_num`=NULL,`true_name`='',`true_id`=NULL,`money`='100',`margin`='0',`status`='0',`create_time`='1536645558',`update_time`='1536645558',`login_time`='1537237309' WHERE `id` = 100001 [ RunTime:0.0293s ]
+SQL: SHOW COLUMNS FROM `login_msg` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `login_msg` WHERE `date` = '2018-09-18' LIMIT 1   [ RunTime:0.0214s ]
+SQL: INSERT INTO `login_msg` (`date`,`count`) VALUES ('2018-09-18','1') [ RunTime:0.0440s ]
+
+[ 2018-09-18T10:21:50+08:00 ] 127.0.0.1 /index.php/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000499s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.188402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.188946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008506s ]
+
+[ 2018-09-18T10:21:55+08:00 ] 127.0.0.1 /index.php/Home/Product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002452s ]
+
+[ 2018-09-18T10:22:04+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+ERR: 无法加载控制器:News
+
+[ 2018-09-18T10:22:07+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+ERR: 无法加载控制器:News
+
+[ 2018-09-18T10:22:12+08:00 ] 127.0.0.1 /index.php/Home/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` WHERE `date` = '2018-09-18' LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT * FROM `calendar` WHERE `date` = '2018-09-18' ORDER BY time LIMIT 0,10   [ RunTime:0.0266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001740s ]
+
+[ 2018-09-18T10:22:16+08:00 ] 127.0.0.1 /index.php/Home/Calendar/index/date/2018-09-04
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002458s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0297s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` WHERE `date` = '2018-09-04' LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT * FROM `calendar` WHERE `date` = '2018-09-04' ORDER BY time LIMIT 0,10   [ RunTime:0.0290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000869s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2018-09-18T10:22:24+08:00 ] 127.0.0.1 /index.php/Home/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.157602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001211s ]
+
+[ 2018-09-18T10:22:55+08:00 ] 127.0.0.1 /index.php/Home/User/Recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002114s ]
+SQL: SHOW COLUMNS FROM `bank_card` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `bank_card`  [ RunTime:0.0277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000592s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.170569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001445s ]
+
+[ 2018-09-18T10:23:00+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT * FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 0,10   [ RunTime:0.0264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000646s ]
+NOTIC: [8] Undefined index: recharge_id D:\wamp\www\waihui\Application\Runtime\Cache\Home\a021061d3a25a839196dbcdf234fc603.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-09-18T10:24:45+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0284s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0281s ]
+SQL: SELECT * FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 0,10   [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000363s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.210098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001864s ]
+
+[ 2018-09-18T10:42:32+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0198s ]
+SQL: SELECT sum(money) FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001610s ]
+
+[ 2018-09-18T10:43:29+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003912s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0251s ]
+SQL: SELECT sum(money) FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2018-09-18T10:44:48+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002492s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0254s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001712s ]
+
+[ 2018-09-18T10:45:46+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001742s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0249s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001720s ]
+
+[ 2018-09-18T10:46:59+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0241s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2018-09-18T10:48:57+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0252s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2018-09-18T10:49:15+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0264s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000529s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2018-09-18T10:50:32+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0218s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2018-09-18T10:50:39+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2018-09-18T10:50:49+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0323s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0318s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000872s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001846s ]
+
+[ 2018-09-18T10:51:18+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000779s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002104s ]
+
+[ 2018-09-18T10:51:25+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0230s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.2448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000415s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000816s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002199s ]
+
+[ 2018-09-18T10:51:31+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002609s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0216s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0211s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000719s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002366s ]
+
+[ 2018-09-18T10:51:37+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003881s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0308s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000761s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001922s ]
+
+[ 2018-09-18T10:51:54+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002290s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0200s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000431s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000846s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002162s ]
+
+[ 2018-09-18T10:52:25+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0268s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000542s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000820s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2018-09-18T10:52:36+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0307s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000604s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001859s ]
+
+[ 2018-09-18T10:52:57+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0251s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000853s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002079s ]
+
+[ 2018-09-18T10:53:28+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003223s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000619s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002562s ]
+
+[ 2018-09-18T10:53:44+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0224s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000844s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001888s ]
+
+[ 2018-09-18T10:55:24+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0213s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2018-09-18T10:56:33+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0199s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2018-09-18T10:57:34+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002481s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0191s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000786s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001893s ]
+
+[ 2018-09-18T10:57:44+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0203s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000496s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2018-09-18T10:58:45+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0248s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000639s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2018-09-18T10:59:21+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003088s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0282s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2018-09-18T11:00:41+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0266s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000675s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001871s ]
+
+[ 2018-09-18T11:01:55+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002152s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0266s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000529s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2018-09-18T11:02:18+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0255s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002448s ]
+
+[ 2018-09-18T11:02:32+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0252s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000547s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2018-09-18T11:02:43+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0254s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000968s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001538s ]
+
+[ 2018-09-18T11:03:09+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0220s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001333s ]
+
+[ 2018-09-18T11:03:10+08:00 ] 127.0.0.1 /index.php/Home/User/allwithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0219s ]
+SQL: SELECT * FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 0,10   [ RunTime:0.0234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000325s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2018-09-18T11:04:13+08:00 ] 127.0.0.1 /index.php/Home/User/allwithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 0,10   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2018-09-18T11:04:22+08:00 ] 127.0.0.1 /index.php/Home/User/allwithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT * FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 0,10   [ RunTime:0.0249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2018-09-18T11:12:44+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0302s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001503s ]
+
+[ 2018-09-18T11:13:19+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002299s ]
+
+[ 2018-09-18T11:13:31+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0198s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0213s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0211s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0196s ]
+
+[ 2018-09-18T11:13:54+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035332s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.2539s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0293s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0269s ]
+
+[ 2018-09-18T11:13:59+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0203s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018771s ]
+
+[ 2018-09-18T11:14:13+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002457s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0237s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0231s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 137 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003215s ]
+
+[ 2018-09-18T11:14:19+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0213s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001440s ]
+
+[ 2018-09-18T11:14:25+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0271s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001948s ]
+
+[ 2018-09-18T11:23:01+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0259s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0248s ]
+NOTIC: [2] Illegal string offset 'money' D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000462s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.361247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.361750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001669s ]
+
+[ 2018-09-18T11:34:23+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0202s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0203s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0201s ]
+NOTIC: [2] Illegal string offset 'money' D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000769s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001533s ]
+
+[ 2018-09-18T11:36:01+08:00 ] 127.0.0.1 /index.php/Home/User/tets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+ERR: 非法操作:tets
+
+[ 2018-09-18T11:36:04+08:00 ] 127.0.0.1 /index.php/Home/User/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0307s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001826s ]
+
+[ 2018-09-18T11:36:06+08:00 ] 127.0.0.1 /index.php/Home/User/tets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+ERR: 非法操作:tets
+
+[ 2018-09-18T11:36:18+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0216s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0217s ]
+NOTIC: [2] Illegal string offset 'money' D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000684s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002257s ]
+
+[ 2018-09-18T11:37:05+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002020s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0256s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0267s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0247s ]
+NOTIC: [2] Illegal string offset 'money' D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 129 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001779s ]
+
+[ 2018-09-18T11:37:22+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0252s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0257s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0257s ]
+NOTIC: [2] Illegal string offset 'money' D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 129 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2018-09-18T11:37:39+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0252s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0276s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002700s ]
+
+[ 2018-09-18T11:37:45+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0201s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000517s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001942s ]
+
+[ 2018-09-18T11:37:51+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2018-09-18T11:38:15+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0271s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0270s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2018-09-18T11:38:18+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 187 行.
+
+[ 2018-09-18T11:38:35+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 187 行.
+
+[ 2018-09-18T11:39:10+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0291s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0286s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000700s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001480s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2018-09-18T11:39:14+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 187 行.
+
+[ 2018-09-18T11:39:19+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 187 行.
+
+[ 2018-09-18T11:40:10+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007079s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0254s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0261s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000688s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2018-09-18T11:40:15+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+
+[ 2018-09-18T11:41:08+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002746s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0289s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0287s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000985s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2018-09-18T11:41:12+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 187 行.
+
+[ 2018-09-18T11:41:16+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 187 行.
+
+[ 2018-09-18T11:42:33+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003573s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0267s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0276s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000676s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001950s ]
+
+[ 2018-09-18T11:42:36+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 188 行.
+
+[ 2018-09-18T11:44:06+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003171s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0195s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0200s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2018-09-18T11:44:12+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+
+[ 2018-09-18T11:44:31+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004341s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0266s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0275s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000464s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000843s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2018-09-18T11:44:35+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+
+[ 2018-09-18T11:44:48+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003071s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0214s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0222s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2018-09-18T11:44:52+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+
+[ 2018-09-18T11:44:54+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003567s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0252s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0254s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0251s ]
+NOTIC: [2] Illegal string offset 'money' D:\wamp\www\waihui\Application\Home\Controller\UserController.class.php 第 163 行.
+
+[ 2018-09-18T11:45:18+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000707s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002474s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0317s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0319s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0302s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2018-09-18T11:45:22+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0282s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0270s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0263s ]
+
+[ 2018-09-18T11:45:36+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0213s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0221s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0207s ]
+SQL: INSERT INTO `withdrawal` (`user_id`,`money`,`msg`,`create_time`,`update_time`) VALUES ('100001','30','提现申请中','1537242336','1537242336') [ RunTime:0.0388s ]
+
+[ 2018-09-18T11:45:38+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002077s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0248s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0251s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000523s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2018-09-18T11:45:41+08:00 ] 127.0.0.1 /index.php/Home/User/allwithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT * FROM `withdrawal` WHERE `user_id` = 100001 LIMIT 0,10   [ RunTime:0.0253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2018-09-18T12:01:25+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0212s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0217s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000566s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001594s ]
+
+[ 2018-09-18T12:01:37+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0259s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0252s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2018-09-18T12:06:48+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0327s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0320s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000618s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002062s ]
+
+[ 2018-09-18T12:07:09+08:00 ] 127.0.0.1 /index.php/Home/User/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000538s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2018-09-18T12:10:33+08:00 ] 127.0.0.1 /index.php/Home/User/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000853s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001378s ]
+
+[ 2018-09-18T12:15:17+08:00 ] 127.0.0.1 /index.php/Home/User/Recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `bank_card` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `bank_card`  [ RunTime:0.0199s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2018-09-18T12:15:19+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0198s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0210s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2018-09-18T12:15:30+08:00 ] 127.0.0.1 /index.php/Home/User/dowithdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+
+[ 2018-09-18T12:16:21+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0296s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2018-09-18T12:17:18+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0285s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0266s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001503s ]
+
+[ 2018-09-18T12:17:20+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000558s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001370s ]
+
+[ 2018-09-18T12:17:20+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+
+[ 2018-09-18T12:17:20+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002272s ]
+
+[ 2018-09-18T12:17:38+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2018-09-18T12:17:38+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001809s ]
+
+[ 2018-09-18T12:17:38+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001491s ]
+
+[ 2018-09-18T12:17:43+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000415s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000964s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001578s ]
+
+[ 2018-09-18T12:17:43+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+
+[ 2018-09-18T12:17:43+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002768s ]
+
+[ 2018-09-18T12:18:57+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000603s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000963s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001723s ]
+
+[ 2018-09-18T12:18:57+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+
+[ 2018-09-18T12:18:57+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+
+[ 2018-09-18T12:20:23+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000804s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2018-09-18T12:20:23+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+
+[ 2018-09-18T12:20:23+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+
+[ 2018-09-18T12:20:24+08:00 ] 127.0.0.1 /index.php/Home/User/Passwordedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002278s ]
+ERR: 模板不存在:./Application/Home/View/User/Passwordedit.html
+
+[ 2018-09-18T12:20:45+08:00 ] 127.0.0.1 /index.php/Home/User/Passwordedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2018-09-18T12:20:46+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+
+[ 2018-09-18T12:20:46+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+
+[ 2018-09-18T12:21:56+08:00 ] 127.0.0.1 /index.php/Home/User/Passwordedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000610s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001585s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2018-09-18T12:21:56+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001231s ]
+
+[ 2018-09-18T12:21:56+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001479s ]
+
+[ 2018-09-18T12:21:59+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001797s ]
+
+[ 2018-09-18T12:21:59+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+
+[ 2018-09-18T12:21:59+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+
+[ 2018-09-18T12:22:15+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000573s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2018-09-18T12:22:15+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+
+[ 2018-09-18T12:22:15+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001182s ]
+
+[ 2018-09-18T12:22:17+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000531s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2018-09-18T12:22:17+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001451s ]
+
+[ 2018-09-18T12:22:17+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001837s ]
+
+[ 2018-09-18T12:24:23+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000621s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001845s ]
+
+[ 2018-09-18T12:24:23+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002810s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-09-18T12:24:23+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001288s ]
+
+[ 2018-09-18T12:24:26+08:00 ] 127.0.0.1 /index.php/Home/User/Passwordedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000644s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2018-09-18T12:24:26+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+
+[ 2018-09-18T12:24:26+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+
+[ 2018-09-18T12:24:32+08:00 ] 127.0.0.1 /index.php/Home/User/Passwordedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000831s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2018-09-18T12:24:33+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+
+[ 2018-09-18T12:24:33+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001279s ]
+
+[ 2018-09-18T12:24:35+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001935s ]
+
+[ 2018-09-18T12:24:35+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001461s ]
+
+[ 2018-09-18T12:24:35+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+
+[ 2018-09-18T12:27:17+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2018-09-18T12:27:17+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+
+[ 2018-09-18T12:27:17+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+
+[ 2018-09-18T12:27:34+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000626s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003086s ]
+
+[ 2018-09-18T12:27:34+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+
+[ 2018-09-18T12:27:34+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+
+[ 2018-09-18T12:27:53+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2018-09-18T12:27:53+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001561s ]
+
+[ 2018-09-18T12:27:53+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001645s ]
+
+[ 2018-09-18T12:28:11+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2018-09-18T12:28:11+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001853s ]
+
+[ 2018-09-18T12:28:11+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+
+[ 2018-09-18T12:28:28+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002017s ]
+
+[ 2018-09-18T12:28:28+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+
+[ 2018-09-18T12:28:28+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+
+[ 2018-09-18T12:28:48+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002222s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000681s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2018-09-18T12:28:48+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+
+[ 2018-09-18T12:28:48+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001539s ]
+
+[ 2018-09-18T12:29:39+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000950s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005330s ]
+
+[ 2018-09-18T12:29:39+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+
+[ 2018-09-18T12:29:39+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+
+[ 2018-09-18T12:29:45+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002408s ]
+
+[ 2018-09-18T12:29:45+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+
+[ 2018-09-18T12:29:45+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+
+[ 2018-09-18T12:29:59+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2018-09-18T12:29:59+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001743s ]
+
+[ 2018-09-18T12:29:59+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+
+[ 2018-09-18T12:30:55+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000669s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001751s ]
+
+[ 2018-09-18T12:30:55+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+
+[ 2018-09-18T12:30:55+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001326s ]
+
+[ 2018-09-18T12:31:00+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000585s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002706s ]
+
+[ 2018-09-18T12:31:00+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001973s ]
+
+[ 2018-09-18T12:31:00+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001281s ]
+
+[ 2018-09-18T12:31:05+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2018-09-18T12:31:05+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+
+[ 2018-09-18T12:31:05+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001377s ]
+
+[ 2018-09-18T12:31:48+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000400s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000764s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2018-09-18T12:31:48+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+
+[ 2018-09-18T12:31:48+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001204s ]
+
+[ 2018-09-18T12:32:22+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000553s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2018-09-18T12:32:22+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+
+[ 2018-09-18T12:32:22+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002008s ]
+
+[ 2018-09-18T12:33:22+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001519s ]
+
+[ 2018-09-18T12:33:23+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+
+[ 2018-09-18T12:33:23+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+
+[ 2018-09-18T12:36:09+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001746s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2018-09-18T12:36:14+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001637s ]
+
+[ 2018-09-18T12:36:27+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000604s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2018-09-18T12:46:14+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000504s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2018-09-18T12:46:18+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+
+[ 2018-09-18T12:47:05+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002057s ]
+
+[ 2018-09-18T12:49:14+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2018-09-18T12:49:17+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002327s ]
+
+[ 2018-09-18T12:49:53+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2018-09-18T12:49:57+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002020s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0254s ]
+SQL: UPDATE `user` SET `username`='ljw',`bank_card_num`='22364757567' WHERE `id` = 100001 [ RunTime:0.0287s ]
+
+[ 2018-09-18T12:49:59+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2018-09-18T12:50:02+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000637s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001599s ]
+
+[ 2018-09-18T12:50:09+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001342s ]
+
+[ 2018-09-18T12:55:52+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000660s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2018-09-18T12:55:54+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001680s ]
+
+[ 2018-09-18T12:56:06+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001211s ]
+
+[ 2018-09-18T12:56:48+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000261s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2018-09-18T12:57:35+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000705s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002219s ]
+
+[ 2018-09-18T12:59:50+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000856s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2018-09-18T13:00:30+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000540s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2018-09-18T13:04:28+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2018-09-18T13:13:44+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000616s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002110s ]
+
+[ 2018-09-18T13:13:56+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002052s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0199s ]
+SQL: UPDATE `user` SET `username`='ljw',`phone`='15505952139',`password`='4f03521c96230519e860802b3d5fca9e',`head_img`='/upload/user/default-user.jpg',`bank_card_num`='22364757567',`true_name`='连各',`true_id`='35032215465465134453',`money`='100',`margin`='0',`status`='1',`create_time`='1536645558',`update_time`='1537247636',`login_time`='1537237309',`verify_msg`=NULL WHERE `id` = 100001 [ RunTime:0.0261s ]
+
+[ 2018-09-18T13:13:57+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000728s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001816s ]
+
+[ 2018-09-18T13:14:31+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0262s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0256s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001306s ]
+
+[ 2018-09-18T13:14:33+08:00 ] 127.0.0.1 /index.php/Home/User/Recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `bank_card` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `bank_card`  [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000517s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2018-09-18T13:14:37+08:00 ] 127.0.0.1 /index.php/Home/User/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2018-09-18T13:14:48+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0222s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000609s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012288s ]
+
+[ 2018-09-18T13:14:55+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001203s ]
+
+[ 2018-09-18T20:01:02+08:00 ] 127.0.0.1 /Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.048536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.049148s ]
+
+[ 2018-09-18T20:01:03+08:00 ] 127.0.0.1 /Home/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002571s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.281730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.282180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007462s ]
+
+[ 2018-09-18T20:01:09+08:00 ] 127.0.0.1 /index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '15505952139' LIMIT 1   [ RunTime:0.0712s ]
+SQL: UPDATE `user` SET `username`='ljw',`phone`='15505952139',`password`='4f03521c96230519e860802b3d5fca9e',`head_img`='/upload/user/default-user.jpg',`bank_card_num`='22364757567',`true_name`='连各',`true_id`='35032215465465134453',`money`='100',`margin`='0',`status`='1',`create_time`='1536645558',`update_time`='1537247636',`login_time`='1537272069',`verify_msg`=NULL WHERE `id` = 100001 [ RunTime:0.1190s ]
+SQL: SHOW COLUMNS FROM `login_msg` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `login_msg` WHERE `date` = '2018-09-18' LIMIT 1   [ RunTime:0.0303s ]
+SQL: UPDATE `login_msg` SET `count`=count+1 WHERE `date` = '2018-09-18' [ RunTime:0.0647s ]
+
+[ 2018-09-18T20:01:09+08:00 ] 127.0.0.1 /index.php/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000475s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000910s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.212336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002822s ]
+
+[ 2018-09-18T20:01:53+08:00 ] 127.0.0.1 /index.php/Home/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003386s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000525s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.330549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.331216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003394s ]
+
+[ 2018-09-18T20:01:56+08:00 ] 127.0.0.1 /index.php/Home/User/Useredit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000480s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.206378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.206945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2018-09-18T20:01:58+08:00 ] 127.0.0.1 /index.php/Home/User/Passwordedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001855s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000964s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.199313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001780s ]
+
+[ 2018-09-18T20:01:58+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002874s ]
+
+[ 2018-09-18T20:01:58+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001753s ]
+
+[ 2018-09-18T20:02:00+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000412s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000897s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.255461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.256160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001942s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001701s ]
+
+[ 2018-09-18T20:02:02+08:00 ] 127.0.0.1 /index.php/Home/User/Passwordedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001793s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002975s ]
+
+[ 2018-09-18T20:02:02+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001881s ]
+
+[ 2018-09-18T20:02:02+08:00 ] 127.0.0.1 /index.php/Home/User/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004751s ]
+
+[ 2018-09-18T20:02:04+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002751s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0542s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0888s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0600s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000570s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.224991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.225638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002873s ]
+
+[ 2018-09-18T20:02:06+08:00 ] 127.0.0.1 /index.php/Home/User/Recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+SQL: SHOW COLUMNS FROM `bank_card` [ RunTime:0.0379s ]
+SQL: SELECT * FROM `bank_card`  [ RunTime:0.0325s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000548s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.264553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.265251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002943s ]
+
+[ 2018-09-18T20:02:07+08:00 ] 127.0.0.1 /index.php/Home/User/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000431s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000978s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002248s ]
+
+[ 2018-09-18T20:02:09+08:00 ] 127.0.0.1 /index.php/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000658s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004506s ]
+
+[ 2018-09-18T20:02:15+08:00 ] 127.0.0.1 /index.php/Home/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001752s ]
+
+[ 2018-09-18T20:02:16+08:00 ] 127.0.0.1 /index.php/Home/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003185s ]
+
+[ 2018-09-18T20:02:16+08:00 ] 127.0.0.1 /Home/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000537s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001778s ]
+

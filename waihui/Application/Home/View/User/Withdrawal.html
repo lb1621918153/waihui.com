@@ -1,0 +1,117 @@
+<include file="Base/css" />
+<link rel="stylesheet" href="__PUBLIC__/admin/css/bootstrap.min.css">
+
+<body class="me">
+    <!-- 头部 -->
+    <include file="Base/header" />
+    <div class="main_box">
+        <!-- 左侧栏 -->
+        <include file="Base/user_sidebar" />
+        <!-- 中间主体 -->
+        <div class="usermain right_userpay" style="width:62%;">
+            <div class="chongzhi">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p class="withdrawal-msg">当前账户金额：<b>￥{$curMoney}</b></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="withdrawal-msg">提现申请中金额：<b>￥{$totalWithdrawalMoney}</b></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="withdrawal-msg">当前可提现金额：<b>￥{$freeMoney}</b></p>
+                    </div>
+                </div>
+
+                <h3 class="text-center">提现金额</h3>
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <div class="input-group form-inline">
+                            <span class="input-group-addon">$</span>
+                            <input id="money" type="number" max="{$freeMoney}" min="1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="dowithdrawal()">提现</button>
+                </div>
+                <br><br><br>
+                <div class="text-right">
+                    <a href="__CONTROLLER__/allwithdrawal" class="btn btn-info">查看所有的提现请求</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <include file="Base/footer" />
+
+    <include file="Base/script" />
+    <script>
+        function delWithdrawal(ref) {
+            var id = $(ref).attr('data-id');
+            layer.open({
+                icon: 3,
+                content: '是否删除提现单号为 "' + id + '"的数据？',
+                btn: ['确定', '取消'],
+                yes: function(index, layero) {
+                    $.post('__CONTROLLER__/delwithdrawal', {
+                        id: id
+                    }, function(res) {
+                        if (res.code === 0) {
+                            layer.open({
+                                icon: 1,
+                                content: res.msg
+                            });
+                            $(ref).parent().parent().remove();
+                        } else {
+                            layer.open({
+                                icon: 2,
+                                content: res.msg
+                            })
+                        }
+                    }, 'json').error(function(err) {
+                        layer.open({
+                            icon: 2,
+                            content: '请求失败'
+                        })
+                    });
+                }
+            });
+        }
+
+        /**
+         * 提现操作
+         */
+        function dowithdrawal() {
+            var money = $("#money").val();
+            $.post("__CONTROLLER__/dowithdrawal", {
+                    money: money
+                }, function(res) {
+                    if (res.code === 0) {
+                        layer.open({
+                            icon: 1,
+                            content: res.msg,
+                            yes: function() {
+                                location.reload();
+                            }
+                        })
+                    } else {
+                        layer.open({
+                            icon: 2,
+                            content: res.msg
+                        })
+                    }
+                }, 'json')
+                .error(function(err) {
+                    layer.open({
+                        icon: 2,
+                        content: '请求失败'
+                    })
+                })
+        }
+
+    </script>
+</body>
+
+</html>

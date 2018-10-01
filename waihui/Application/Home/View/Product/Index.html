@@ -1,0 +1,95 @@
+<include file="Base/css"/>
+
+<body>
+<!-- 头部 -->
+<include file="Base/header"/>
+<div class="main_box">
+    <!-- 左侧栏 -->
+    <include file="Base/sidebar"/>
+    <!-- 中间主体 -->
+    <div class="changemain">
+        <table class="cpjy">
+            <volist name="products" id="product" empty="$empty">
+                <tr id="{$product.id}">
+                    <td class="ng-binding prtitle">{$product.product_name}</td>
+                    <td class="up_number">
+                        <a href="javascript:;" class="ng-binding rise-value now-value">{$product.current}</a>
+                    </td>
+
+                    <td style="text-align: left;padding-left: 30px;">
+                        <p>最低<span class="table_number rise-low">{$product.lowest}</span></p>
+                        <p>最高<span class="table_number rise-high">{$product.highest}</span></p>
+                    </td>
+                    <td style="text-align: left;padding-left: 30px;">
+                        <p>开盘<span class="table_number">{$product.open}</span></p>
+                        <p>昨收<span class="table_number">{$product.income}</span></p>
+                    </td>
+                    <td>
+                        <div class="buy">
+                            <a href="__CONTROLLER__/detail/id/{$product.id}">我要交易</a>
+                        </div>
+                    </td>
+                </tr>
+            </volist>
+        </table>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<include file="Base/footer"/>
+
+<include file="Base/script"/>
+<script>
+    // var order_list;
+    // var order_index = 0;
+    // var max_rand = 50;
+    //
+    // function order_show() {
+    //     if (order_list != null && $("#J_order").is(":hidden")) {
+    //         if (order_index >= max_rand) {
+    //             order_index = 0;
+    //         }
+    //         $("#J_order").find(".order-phone").html(order_list[order_index]['phone']);
+    //         $("#J_order").find(".order-rs").html('赢利+' + order_list[order_index]['price'] + '元');
+    //         $("#J_order").show();
+    //         window.setTimeout(function () {
+    //             $("#J_order").hide();
+    //         }, 1500);
+    //         order_index++;
+    //     }
+    // }
+    //
+    // function order_start() {
+    //     var rand = Math.ceil(Math.random() * 100);
+    //     if (rand >= 80) {
+    //         if (order_list != null) {
+    //             order_show();
+    //         }
+    //     }
+    // }
+    //
+    // $(document).ready(function () {
+    //     $.ajax({
+    //         type: "GET",
+    //         contentType: "application/json;charset=utf-8",
+    //         url: "/index/index/ajax_order",
+    //         data: null,
+    //         dataType: "json",
+    //         complete: function () {
+    //         },
+    //         success: function (result) {
+    //             order_list = result;
+    //         },
+    //         error: function (result, status) {
+    //         }
+    //     });
+    //     /*
+    //     $.get("/index/index/ajax_order",null,function(data){
+    //         order_list = data;
+    //     });
+    //     */
+    //     window.setInterval(order_start, 1000);
+    // });
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+    <include file="Base/css"/>
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <include file="Base/navbar"/>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <include file="Base/sidebar"/>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <h3 class="page-title">产品管理</h3>
+                <div>
+                    <!-- BORDERED TABLE -->
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">产品信息编辑</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form id="form" action="__CONTROLLER__/update" method="post">
+                                <input type="hidden" name="id" value="{$product.id}">
+                                <div class="row row-height">
+                                    <div class="col-sm-2 text-right">产品名称：</div>
+                                    <div class="col-sm-10 form-inline"><input name="product_name" class="form-control" type="text" value="{$product.product_name}"></div>
+                                </div>
+                                <div class="row row-height">
+                                    <div class="col-sm-2 text-right">当前值：</div>
+                                    <div class="col-sm-10 form-inline"><input name="current" class="form-control" type="text" value="{$product.current}"></div>
+                                </div>
+                                <div class="row row-height">
+                                    <div class="col-sm-2 text-right">最低值：</div>
+                                    <div class="col-sm-10 form-inline"><input name="lowest" class="form-control" type="text" value="{$product.lowest}"></div>
+                                </div>
+                                <div class="row row-height">
+                                    <div class="col-sm-2 text-right">最高值：</div>
+                                    <div class="col-sm-10 form-inline"><input name="highest" class="form-control" type="text" value="{$product.highest}"></div>
+                                </div>
+                                <div class="row row-height">
+                                    <div class="col-sm-2 text-right">开盘：</div>
+                                    <div class="col-sm-10 form-inline"><input name="open" class="form-control" type="text" value="{$product.open}"></div>
+                                </div>
+                                <div class="row row-height">
+                                    <div class="col-sm-2 text-right">昨收：</div>
+                                    <div class="col-sm-10 form-inline"><input name="income" class="form-control" type="text" value="{$product.income}"></div>
+                                </div>
+                                <div class="row row-height">
+                                    <div class="col-sm-2 text-right">手续费：</div>
+                                    <div class="col-sm-10 form-inline form-group">
+                                        <div class="input-group">
+                                            <input name="handing_fee" type="text" class="form-control" id="handle" aria-describedby="handle" value="{$product.handing_fee}" size="14">
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-height">
+                                    <div class="col-sm-2 text-right">实时图外链：</div>
+                                    <div class="col-sm-10"><input name="url" class="form-control" type="text" value="{$product.url}"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 text-right">前台是否可见：</div>
+                                    <div class="col-sm-10">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="enable" value="1" <if condition="$product.enable == 1">checked</if>> 显示
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="enable" value="0" <if condition="$product.enable == 0">checked</if>> 隐藏
+                                        </label>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <input type="submit" class="btn btn-primary" value="确认修改">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <include file="Base/footer"/>
+</div>
+<div id="imageSelect" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imageSelect">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">图片选择</h4>
+            </div>
+            <div class="modal-body">
+                <volist name="images" id="image" empty="服务器当前没有图片">
+                    <a class="image-select text-center" onclick="selectImg(this)">
+                        <img src="__PUBLIC__{$image}" alt="" width="60">
+                    </a>
+                </volist>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<include file="Base/script"/>
+<script>
+    const SCOPE = {
+        updatePwdUrl: '__MODULE__/admin/update',
+        deleteDataUrl: '__CONTROLLER__/del',
+        showDataUrl: '__CONTROLLER__/detail',
+        imageUploadUrl: '__MODULE__/image/upload'
+    };
+
+    function openFileSelect() {
+        $("#btn_file").click();
+    }
+
+    function selectImg(ref) {
+        var imgSrc = $(ref).children('img').attr('src');
+        $("#preview").attr('src', imgSrc);
+        var pub = "Public";
+        $("#area").val(imgSrc.substr(imgSrc.indexOf(pub) + pub.length));
+    }
+
+    $("#btn_file").on("change", function () {
+        var img = this.files[0];
+        if (img) {
+            var formData = new FormData();
+            formData.append("area_img", img);
+            $.ajax({
+               url: SCOPE.imageUploadUrl,
+                type: 'post',
+                data: formData,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (res) {
+                    showTip(res.msg);
+                    if (res.code === 0) {
+                        $("#preview").attr('src', '__PUBLIC__' + res.url);
+                        $("#area").val(res.url);
+                    }
+                },
+                error: function (err) {
+                    showTip('请求失败');
+                }
+            });
+        } else {
+            alert('请选择图片');
+        }
+    })
+</script>
+</body>
+</html>

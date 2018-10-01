@@ -1,0 +1,3632 @@
+[ 2018-09-23T07:34:16+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016623s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0377s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT `news_id`,`news_title`,`create_time` FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.045124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.045207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.576761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.576858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003019s ]
+
+[ 2018-09-23T07:49:13+08:00 ] 127.0.0.1 /index.php/Home/News/detail/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0250s ]
+SQL: SELECT `news_title`,`news_content`,`create_time` FROM `news` WHERE `news_id` = 6 LIMIT 1   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2018-09-23T07:49:25+08:00 ] 127.0.0.1 /index.php/Home/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0288s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` WHERE `date` = '2018-09-23' LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT * FROM `calendar` WHERE `date` = '2018-09-23' ORDER BY time LIMIT 0,10   [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2018-09-23T07:49:26+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-09-23T08:05:17+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.067716s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2018-09-23T08:05:17+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+
+[ 2018-09-23T08:11:38+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0313s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001461s ]
+
+[ 2018-09-23T08:11:38+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+
+[ 2018-09-23T12:03:45+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017023s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0239s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003184s ]
+
+[ 2018-09-23T12:03:46+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2018-09-23T15:48:38+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0454s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.162087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.051930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.051982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011589s ]
+
+[ 2018-09-23T15:48:38+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002416s ]
+
+[ 2018-09-23T16:41:19+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0283s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0275s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002428s ]
+
+[ 2018-09-23T16:41:19+08:00 ] 127.0.0.1 /index.php/Home/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+
+[ 2018-09-23T16:41:19+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:19+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+
+[ 2018-09-23T16:41:20+08:00 ] 127.0.0.1 /index.php/Home/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-09-23T16:41:22+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2018-09-23T16:41:22+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2018-09-23T16:41:22+08:00 ] 127.0.0.1 /index.php/Home/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-09-23T16:41:22+08:00 ] 127.0.0.1 /index.php/Home/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-09-23T16:41:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:23+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0279s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001832s ]
+
+[ 2018-09-23T16:41:23+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-09-23T16:41:23+08:00 ] 127.0.0.1 /index.php/Home/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+
+[ 2018-09-23T16:41:23+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003215s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:23+08:00 ] 127.0.0.1 /index.php/Home/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001505s ]
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pcstyle.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pcmy.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/wpauto.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/css/font_593216_6icj22flqa.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021081s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/order.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001671s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pc.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/static/79752b2431804d984ecf76dc70324903.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/static/logo2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004156s ]
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002349s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/static/userlogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/order.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003778s ]
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001392s ]
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/css/font_593216_6icj22flqa.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pcstyle.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009727s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pc.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009196s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/order.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/wpauto.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pcmy.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/static/79752b2431804d984ecf76dc70324903.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/static/logo2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002036s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/order.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/static/userlogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:50+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/wpauto.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pc.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/css/font_593216_6icj22flqa.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/order.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pcmy.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/static/79752b2431804d984ecf76dc70324903.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pcstyle.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/static/logo2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002655s ]
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/static/userlogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/order.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:41:51+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0258s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pc.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/wpauto.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/css/font_593216_6icj22flqa.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/order.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pcstyle.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/css/pcmy.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/static/logo2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/order.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/static/79752b2431804d984ecf76dc70324903.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001906s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/static/userlogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004299s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/static/beian1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/static/beian2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:45:22+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:47:45+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002255s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2018-09-23T16:47:45+08:00 ] 127.0.0.1 /index.php/Home/static/79752b2431804d984ecf76dc70324903.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+
+[ 2018-09-23T16:47:45+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+
+[ 2018-09-23T16:47:45+08:00 ] 127.0.0.1 /index.php/Home/static/userlogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+
+[ 2018-09-23T16:47:45+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003691s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:47:45+08:00 ] 127.0.0.1 /index.php/Home/static/logo2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+
+[ 2018-09-23T16:47:54+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0315s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0309s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2018-09-23T16:47:54+08:00 ] 127.0.0.1 /index.php/Home/static/logo2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-09-23T16:47:54+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:47:54+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+
+[ 2018-09-23T16:47:54+08:00 ] 127.0.0.1 /index.php/Home/static/79752b2431804d984ecf76dc70324903.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+
+[ 2018-09-23T16:47:54+08:00 ] 127.0.0.1 /index.php/Home/static/userlogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+
+[ 2018-09-23T16:48:39+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0256s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2018-09-23T16:48:39+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+
+[ 2018-09-23T16:48:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001541s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:50:29+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0261s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2018-09-23T16:50:29+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-09-23T16:50:29+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:50:39+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2018-09-23T16:50:39+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-09-23T16:50:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:00+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0301s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2018-09-23T16:51:00+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:00+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+
+[ 2018-09-23T16:51:35+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2018-09-23T16:51:35+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+
+[ 2018-09-23T16:51:35+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:36+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0259s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0263s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2018-09-23T16:51:36+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:36+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-09-23T16:51:36+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0199s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2018-09-23T16:51:36+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:36+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-09-23T16:51:37+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002301s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0199s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2018-09-23T16:51:37+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+
+[ 2018-09-23T16:51:37+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003725s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:39+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0307s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0298s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2018-09-23T16:51:39+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-09-23T16:51:39+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:40+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0258s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0244s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2018-09-23T16:51:40+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:40+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+
+[ 2018-09-23T16:51:41+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0207s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2018-09-23T16:51:41+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:51:41+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001269s ]
+
+[ 2018-09-23T16:52:23+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2018-09-23T16:52:23+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+
+[ 2018-09-23T16:52:23+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:52:45+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0208s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2018-09-23T16:52:45+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+
+[ 2018-09-23T16:52:45+08:00 ] 127.0.0.1 /index.php/Home/asset/js/hold.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+ERR: 无法加载控制器:Asset
+
+[ 2018-09-23T16:53:27+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0252s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0245s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2018-09-23T16:53:27+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-09-23T16:54:07+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0239s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002003s ]
+
+[ 2018-09-23T16:54:07+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+
+[ 2018-09-23T16:54:46+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001223s ]
+
+[ 2018-09-23T16:54:47+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+
+[ 2018-09-23T16:55:48+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0252s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0247s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2018-09-23T16:55:48+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+
+[ 2018-09-23T16:55:59+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001785s ]
+
+[ 2018-09-23T16:56:00+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+
+[ 2018-09-23T16:56:40+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.2617s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0311s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2018-09-23T16:56:40+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002472s ]
+
+[ 2018-09-23T17:00:46+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0241s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0268s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001566s ]
+
+[ 2018-09-23T17:00:46+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+
+[ 2018-09-23T17:01:10+08:00 ] 127.0.0.1 /index.php/Home/Order/detail/id/WHJY-20180922-80198-100001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+ERR: 非法操作:detail
+
+[ 2018-09-23T17:01:15+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `news_id`,`news_title`,`create_time` FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2018-09-23T17:01:40+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0222s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2018-09-23T17:01:40+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2018-09-23T17:01:42+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT `news_id`,`news_title`,`create_time` FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2018-09-23T17:03:04+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0247s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT `news_id`,`news_title`,`create_time` FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-09-23T17:03:08+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT `order_id`,`user_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` WHERE `user_id` = 100001 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2018-09-23T17:03:08+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+
+[ 2018-09-23T17:04:08+08:00 ] 127.0.0.1 /index.php/Home/Order/detail/id/WHJY-20180922-80093-100001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+ERR: 非法操作:detail
+
+[ 2018-09-23T17:18:16+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT `news_id`,`news_title`,`create_time` FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0189s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011146s ]
+
+[ 2018-09-23T17:18:17+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT `order_id`,`user_id`,`product_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0251s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: product_name D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: product_name D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: product_name D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001527s ]
+
+[ 2018-09-23T17:18:17+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+
+[ 2018-09-23T17:20:48+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT `order_id`,`user_id`,`product_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0222s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: product_name D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: product_name D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: product_name D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001595s ]
+
+[ 2018-09-23T17:20:48+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+
+[ 2018-09-23T17:21:17+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002050s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT `order_id`,`user_id`,`product_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001627s ]
+
+[ 2018-09-23T17:22:21+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0195s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT `order_id`,`user_id`,`product_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2018-09-23T17:22:23+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0279s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0356s ]
+SQL: SELECT `order_id`,`user_id`,`product_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2018-09-23T17:22:23+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0261s ]
+SQL: SELECT `order_id`,`user_id`,`product_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2018-09-23T17:22:24+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT `order_id`,`user_id`,`product_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2018-09-23T17:22:24+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.2547s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0271s ]
+SQL: SELECT `order_id`,`user_id`,`product_id`,`price`,`buy_price`,`buy_time`,`status`,`create_time`,`kind`,`sellprice`,`selltime`,`ploss` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2018-09-23T17:22:43+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0303s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2018-09-23T17:22:57+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.2605s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.4922s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2018-09-23T17:22:57+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-09-23T17:25:41+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003208s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001477s ]
+
+[ 2018-09-23T17:25:41+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+
+[ 2018-09-23T17:26:08+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0257s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2018-09-23T17:26:08+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+
+[ 2018-09-23T17:27:53+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0254s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2018-09-23T17:27:53+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-09-23T17:29:31+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0244s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0247s ]
+NOTIC: [8] Undefined index: create_time D:\phpStudy\WWW\waihui\Application\Home\Controller\OrderController.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [2] Illegal string offset 'order_id' D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [2] Illegal string offset 'create_time' D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [2] Illegal string offset 'kind' D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [2] Illegal string offset 'price' D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2018-09-23T17:29:31+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002934s ]
+
+[ 2018-09-23T17:32:14+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0297s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002035s ]
+
+[ 2018-09-23T17:32:45+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.2521s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2018-09-23T17:33:07+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002614s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0264s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2018-09-23T17:33:39+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2018-09-23T17:33:45+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2018-09-23T17:36:04+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0195s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001829s ]
+
+[ 2018-09-23T17:36:11+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0299s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0302s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2018-09-23T17:36:11+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+
+[ 2018-09-23T17:38:46+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0277s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2018-09-23T17:38:46+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+
+[ 2018-09-23T19:35:29+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003609s ]
+
+[ 2018-09-23T19:35:29+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+
+[ 2018-09-23T19:36:57+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0325s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0315s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001892s ]
+
+[ 2018-09-23T19:36:57+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+
+[ 2018-09-23T19:37:08+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0259s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2018-09-23T19:37:08+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001489s ]
+
+[ 2018-09-23T19:37:30+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0246s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001445s ]
+
+[ 2018-09-23T19:37:30+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+
+[ 2018-09-23T19:38:59+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002734s ]
+
+[ 2018-09-23T19:38:59+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+
+[ 2018-09-23T19:40:20+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002434s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0275s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2018-09-23T19:40:20+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+
+[ 2018-09-23T19:40:22+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0228s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006772s ]
+
+[ 2018-09-23T19:40:57+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0274s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002285s ]
+
+[ 2018-09-23T19:40:57+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+
+[ 2018-09-23T19:40:58+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0328s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0321s ]
+
+[ 2018-09-23T19:41:06+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0315s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0236s ]
+
+[ 2018-09-23T19:41:13+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0248s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0245s ]
+
+[ 2018-09-23T19:41:40+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0283s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0276s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2018-09-23T19:41:40+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+
+[ 2018-09-23T19:41:46+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0310s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0301s ]
+
+[ 2018-09-23T19:42:16+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2018-09-23T19:42:17+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+
+[ 2018-09-23T19:42:18+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006728s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0301s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0296s ]
+
+[ 2018-09-23T19:42:54+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.2485s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001734s ]
+
+[ 2018-09-23T19:42:54+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+
+[ 2018-09-23T19:42:56+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0270s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0271s ]
+
+[ 2018-09-23T19:43:21+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0255s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2018-09-23T19:43:22+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001245s ]
+
+[ 2018-09-23T19:43:23+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0246s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0244s ]
+
+[ 2018-09-23T19:44:15+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0321s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2018-09-23T19:44:15+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+
+[ 2018-09-23T19:44:16+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0198s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0193s ]
+
+[ 2018-09-23T19:46:17+08:00 ] 127.0.0.1 /index.php/Home/Order/details
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001541s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0195s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = 'WHJY-20180922-80198-100001'  [ RunTime:0.0192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001777s ]
+
+[ 2018-09-23T19:47:03+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT `product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+NOTIC: [8] Undefined index: order_id D:\phpStudy\WWW\waihui\Application\Runtime\Cache\Home\c1b263fe2d2599dd8e079943a6a879fd.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2018-09-23T19:47:03+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+
+[ 2018-09-23T19:47:04+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0265s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0266s ]
+
+[ 2018-09-23T19:47:06+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0210s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.0207s ]
+
+[ 2018-09-23T19:47:08+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0251s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = ''  [ RunTime:0.2547s ]
+
+[ 2018-09-23T19:47:45+08:00 ] 127.0.0.1 /index.php/Home/Order/details
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0258s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = 'WHJY-20180922-80198-100001'  [ RunTime:0.0259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004792s ]
+
+[ 2018-09-23T19:49:33+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0317s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0312s ]
+SQL: SELECT `order_id`,`product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2018-09-23T19:49:33+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+
+[ 2018-09-23T19:49:34+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0221s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = 'WHJY-20180922-80093-100001'  [ RunTime:0.0221s ]
+
+[ 2018-09-23T19:50:27+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0197s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = 'WHJY-20180922-79863-100001'  [ RunTime:0.0201s ]
+
+[ 2018-09-23T19:50:31+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0301s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = 'WHJY-20180922-80093-100001'  [ RunTime:0.0279s ]
+
+[ 2018-09-23T19:56:12+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0280s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = 'WHJY-20180922-80198-100001'  [ RunTime:0.0276s ]
+
+[ 2018-09-23T19:56:22+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0263s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = 'WHJY-20180922-80093-100001'  [ RunTime:0.0255s ]
+
+[ 2018-09-23T20:41:08+08:00 ] 127.0.0.1 /Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2018-09-23T20:41:11+08:00 ] 127.0.0.1 /index.php/Home/Product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `product` WHERE `enable` = 1  [ RunTime:0.0285s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2018-09-23T20:41:26+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT `news_id`,`news_title`,`create_time` FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001485s ]
+
+[ 2018-09-23T20:41:29+08:00 ] 127.0.0.1 /index.php/Home/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0317s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` WHERE `date` = '2018-09-23' LIMIT 1   [ RunTime:0.0311s ]
+SQL: SELECT * FROM `calendar` WHERE `date` = '2018-09-23' ORDER BY time LIMIT 0,10   [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001377s ]
+
+[ 2018-09-23T20:41:32+08:00 ] 127.0.0.1 /index.php/Home/Calendar/index/date/2018-09-04
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` WHERE `date` = '2018-09-04' LIMIT 1   [ RunTime:0.0276s ]
+SQL: SELECT * FROM `calendar` WHERE `date` = '2018-09-04' ORDER BY time LIMIT 0,10   [ RunTime:0.0242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2018-09-23T20:41:43+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0299s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0293s ]
+SQL: SELECT `order_id`,`product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-09-23T20:41:43+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+
+[ 2018-09-23T20:42:04+08:00 ] 127.0.0.1 /index.php/Home/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2018-09-23T20:42:16+08:00 ] 127.0.0.1 /index.php/Home/User/Withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0329s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0323s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2018-09-23T20:42:26+08:00 ] 127.0.0.1 /index.php/Home/User/Userverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2018-09-23T20:42:49+08:00 ] 127.0.0.1 /index.php/Home/User/Passwordedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2018-09-23T20:42:52+08:00 ] 127.0.0.1 /index.php/Home/User/Recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `bank_card` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `bank_card`  [ RunTime:0.0193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2018-09-23T21:27:20+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.050071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT `order_id`,`product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2018-09-23T21:27:20+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-09-23T21:36:55+08:00 ] 127.0.0.1 /index.php/Home/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` WHERE `date` = '2018-09-23' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `calendar` WHERE `date` = '2018-09-23' ORDER BY time LIMIT 0,10   [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2018-09-23T23:59:23+08:00 ] 127.0.0.1 /index.php/Home/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `user_id` = 100001 LIMIT 1   [ RunTime:0.0228s ]
+SQL: SELECT `order_id`,`product_name`,`price`,`create_time`,`kind` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `user_id` = '100001' ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2018-09-23T23:59:23+08:00 ] 127.0.0.1 /index.php/Home/upload/img/00f31142bc2000691edb709244e29d89.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+
+[ 2018-09-23T23:59:26+08:00 ] 127.0.0.1 /index.php/Home/Order/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0210s ]
+SQL: SELECT `product_name`,`buy_price`,`sellprice`,`handing_fee`,`ploss`,`create_time`,`selltime` FROM `order` INNER JOIN product on product.id=order.product_id  WHERE `order_id` = 'WHJY-20180922-80198-100001'  [ RunTime:0.0201s ]
+
+[ 2018-09-23T23:59:37+08:00 ] 127.0.0.1 /index.php/Home/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` WHERE `date` = '2018-09-23' LIMIT 1   [ RunTime:0.0224s ]
+SQL: SELECT * FROM `calendar` WHERE `date` = '2018-09-23' ORDER BY time LIMIT 0,10   [ RunTime:0.0232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2018-09-23T23:59:40+08:00 ] 127.0.0.1 /index.php/Home/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0288s ]
+SQL: SELECT `news_id`,`news_title`,`create_time` FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2018-09-23T23:59:42+08:00 ] 127.0.0.1 /index.php/Home/Product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.7163s ]
+SQL: SELECT * FROM `product` WHERE `enable` = 1  [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2018-09-23T23:59:46+08:00 ] 127.0.0.1 /index.php/Home/Product/detail/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001525s ]
+
+[ 2018-09-23T23:59:49+08:00 ] 127.0.0.1 /index.php/Home/Product/getProduct?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0216s ]
+
+[ 2018-09-23T23:59:53+08:00 ] 127.0.0.1 /index.php/Home/Order/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0259s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `withdrawal` WHERE `user_id` = 100001 AND `status` = 0 LIMIT 1   [ RunTime:0.0278s ]
+

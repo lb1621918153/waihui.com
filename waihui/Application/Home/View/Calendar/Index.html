@@ -1,0 +1,86 @@
+<include file="Base/css"/>
+
+<body>
+<!-- 头部 -->
+<include file="Base/header"/>
+<div class="main_box">
+    <!-- 左侧栏 -->
+    <include file="Base/sidebar"/>
+    <!-- 中间主体 -->
+    <div class="cjrlmain">
+        <label>
+            日期：
+            <input id="selectDate" name="date" class="form-control" type="date" value="{$today}" onchange="changeDate()">
+        </label>
+        <br><br>
+
+        <table class="cjrl">
+            <thead>
+            <tr class="header">
+                <th>地区</th>
+                <th>时间</th>
+                <th class="w_200">指标名称</th>
+                <th>前值</th>
+                <th>预期</th>
+                <th>公布</th>
+                <th class="w_200">影响</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="calendars" id="calendar" empty="$empty">
+                <tr>
+                    <td><img class="country" width="40" height="30" alt="country" src="__PUBLIC__{$calendar.area}"></td>
+                    <td>{$calendar.time}</td>
+                    <td>{$calendar.name}</td>
+                    <td>{$calendar.before_value|emptyNum}</td>
+                    <td>{$calendar.expected|emptyNum}</td>
+                    <td>{$calendar.announce|emptyNum}</td>
+                    <td>
+                        <div class="kind {$calendar.effect|calendarStyle}">{$calendar.effect}</div>
+                        <div class="stars">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+        <br>
+        <if condition="$calendars">
+            <div class="text-center">
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+        </if>
+    </div>
+
+    <!-- 右侧栏 -->
+    <div class="right_side">
+        <div class="ad_header">
+            <h2>官方推荐</h2>
+            <div class="line"></div>
+        </div>
+        <ul class="ad_list">
+            <li>
+                <a href="">
+                    <img width="310" height="189" src="__PUBLIC__/home/upload/img/00f31142bc2000691edb709244e29d89.jpg" alt=""
+                         class="ad">
+                    <div class="ad_title">鑫洋交易中心</div>
+                    <div class="ad_tag">广告</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 页脚 -->
+<include file="Base/footer"/>
+<script>
+    function changeDate() {
+        var selectDate = document.getElementById("selectDate").value;
+        location.href = '__CONTROLLER__/index/date/' + selectDate;
+    }
+</script>
+</body>
+</html>

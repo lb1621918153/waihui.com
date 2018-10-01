@@ -1,0 +1,1818 @@
+[ 2018-09-19T14:11:12+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001638s ]
+
+[ 2018-09-19T14:11:14+08:00 ] 127.0.0.1 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.1135s ]
+SQL: SELECT * FROM `admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0277s ]
+SQL: UPDATE `admin` SET `account`='admin',`password`='admin',`power`='2',`login_time`='1537337474' WHERE `id` = 1 [ RunTime:0.0907s ]
+
+[ 2018-09-19T14:11:15+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0328s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0305s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0438s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0278s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  ORDER BY recharge.create_time desc LIMIT 5   [ RunTime:0.0370s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  ORDER BY withdrawal.create_time desc LIMIT 5   [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `login_msg` [ RunTime:0.0299s ]
+SQL: SELECT * FROM `login_msg` ORDER BY date desc LIMIT 7   [ RunTime:0.0288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000608s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001164s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 176 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 176 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.316275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.316630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2018-09-19T14:13:42+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0251s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0249s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  ORDER BY recharge.create_time desc LIMIT 5   [ RunTime:0.0258s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  ORDER BY withdrawal.create_time desc LIMIT 5   [ RunTime:0.0255s ]
+SQL: SHOW COLUMNS FROM `login_msg` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `login_msg` ORDER BY date desc LIMIT 7   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000479s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 176 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 176 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.230533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.230872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002781s ]
+
+[ 2018-09-19T14:14:10+08:00 ] 127.0.0.1 /index.php/Admin/Recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  ORDER BY recharge.create_time desc LIMIT 0,10   [ RunTime:0.0213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000387s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000715s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.172192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2018-09-19T14:14:14+08:00 ] 127.0.0.1 /index.php/Admin/Recharge/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003764s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `recharge` WHERE `recharge_id` = 1 LIMIT 1   [ RunTime:0.0253s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0266s ]
+SQL: UPDATE `user` SET `money`=money+100 WHERE `id` = 100001 [ RunTime:0.0285s ]
+SQL: UPDATE `recharge` SET `user_id`='100001',`money`='100',`status`='1',`msg`='并没有受到对应的汇款信息',`detail`='汇款单号：1024651651。充值金额100元',`create_time`='1536678042',`update_time`='1537102727' WHERE `recharge_id` = 1 [ RunTime:0.0262s ]
+
+[ 2018-09-19T14:14:15+08:00 ] 127.0.0.1 /index.php/Admin/Recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001687s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.2463s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  ORDER BY recharge.create_time desc LIMIT 0,10   [ RunTime:0.0202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000744s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001867s ]
+
+[ 2018-09-19T14:14:22+08:00 ] 127.0.0.1 /index.php/Admin/user/detail?id=100001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0275s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0271s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.2502s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0249s ]
+SQL: SELECT * FROM `recharge` LIMIT 0,5   [ RunTime:0.0255s ]
+SQL: SELECT * FROM `withdrawal` LIMIT 0,5   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001495s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.254871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.255359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2018-09-19T14:16:28+08:00 ] 127.0.0.1 /index.php/Admin/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000560s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001136s ]
+NOTIC: [8] Undefined variable: products D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 111 行.
+NOTIC: [8] Undefined variable: empty D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 125 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.239300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.239663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002304s ]
+
+[ 2018-09-19T14:16:30+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001526s ]
+
+[ 2018-09-19T14:18:24+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000562s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029595s ]
+
+[ 2018-09-19T14:20:28+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001675s ]
+
+[ 2018-09-19T14:20:35+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001988s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000452s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000904s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002748s ]
+
+[ 2018-09-19T14:25:55+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000481s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000931s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003552s ]
+
+[ 2018-09-19T14:26:02+08:00 ] 127.0.0.1 /index.php/Admin/News/doadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+NOTIC: [8] Undefined index: news_content D:\wamp\www\waihui\Application\Admin\Controller\NewsController.class.php 第 27 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002117s ]
+
+[ 2018-09-19T14:26:24+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000678s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002505s ]
+
+[ 2018-09-19T14:26:27+08:00 ] 127.0.0.1 /index.php/Admin/News/doadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002769s ]
+
+[ 2018-09-19T14:26:48+08:00 ] 127.0.0.1 /index.php/Admin/News/doadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002298s ]
+NOTIC: [8] Undefined index: news_content D:\wamp\www\waihui\Application\Admin\Controller\NewsController.class.php 第 27 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000759s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016532s ]
+
+[ 2018-09-19T14:27:02+08:00 ] 127.0.0.1 /index.php/Admin/News/doadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001145s ]
+
+[ 2018-09-19T14:28:07+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000423s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000799s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001774s ]
+
+[ 2018-09-19T14:28:20+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000412s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000832s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003227s ]
+
+[ 2018-09-19T14:28:39+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001668s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000454s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000877s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002708s ]
+
+[ 2018-09-19T14:28:52+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000658s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003766s ]
+
+[ 2018-09-19T14:28:55+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002075s ]
+
+[ 2018-09-19T14:29:17+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000741s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001920s ]
+
+[ 2018-09-19T14:29:46+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000860s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001406s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002142s ]
+
+[ 2018-09-19T14:29:52+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000886s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.195766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.197377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003556s ]
+
+[ 2018-09-19T14:30:01+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000540s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002089s ]
+
+[ 2018-09-19T14:30:08+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000775s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2018-09-19T14:30:30+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000337s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000637s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003548s ]
+
+[ 2018-09-19T14:31:04+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2018-09-19T14:31:39+08:00 ] 127.0.0.1 /index.php/Admin/News/doadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001466s ]
+
+[ 2018-09-19T14:31:58+08:00 ] 127.0.0.1 /index.php/Admin/News/doadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2018-09-19T14:34:18+08:00 ] 127.0.0.1 /index.php/Admin/News/doadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004491s ]
+
+[ 2018-09-19T14:37:48+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001896s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000407s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2018-09-19T14:38:24+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000529s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000985s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.197226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.197671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005764s ]
+
+[ 2018-09-19T14:39:26+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000465s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000985s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002118s ]
+
+[ 2018-09-19T14:39:31+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001563s ]
+
+[ 2018-09-19T14:39:42+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000589s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001807s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2018-09-19T14:41:09+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001746s ]
+
+[ 2018-09-19T14:41:15+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000603s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002071s ]
+
+[ 2018-09-19T14:42:16+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000697s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005069s ]
+
+[ 2018-09-19T14:43:09+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000567s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003746s ]
+
+[ 2018-09-19T14:44:01+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001528s ]
+NOTIC: [8] Undefined variable: images D:\wamp\www\waihui\Application\Runtime\Cache\Admin\d30e642bd781a69d2a14c996403a8b19.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2018-09-19T14:50:06+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000639s ]
+NOTIC: [8] Undefined variable: images D:\wamp\www\waihui\Application\Runtime\Cache\Admin\d30e642bd781a69d2a14c996403a8b19.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004793s ]
+
+[ 2018-09-19T14:50:14+08:00 ] 127.0.0.1 /index.php/Admin/image/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010018s ]
+ERR: 非法操作:upload
+
+[ 2018-09-19T14:50:30+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000399s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000729s ]
+NOTIC: [8] Undefined variable: images D:\wamp\www\waihui\Application\Runtime\Cache\Admin\d30e642bd781a69d2a14c996403a8b19.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003137s ]
+
+[ 2018-09-19T14:50:34+08:00 ] 127.0.0.1 /index.php/Admin/image/newsUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002589s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\waihui\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2018-09-19T14:53:11+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001941s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001899s ]
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003721s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000597s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004089s ]
+
+[ 2018-09-19T14:53:44+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000732s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003003s ]
+
+[ 2018-09-19T14:57:38+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000798s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001443s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.191136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.191678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003953s ]
+
+[ 2018-09-19T15:02:13+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000406s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000876s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001999s ]
+
+[ 2018-09-19T15:02:50+08:00 ] 127.0.0.1 /index.php/Admin/News/doadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001761s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0275s ]
+SQL: INSERT INTO `news` (`news_intro`,`news_thum`,`hot`,`news_content`,`create_by`,`create_time`,`update_time`) VALUES ('没什么概要','/upload/news/5ba1f1bab6a6f.jpg','0','<p>这也没什么了三年卡琳娜乐扣乐扣.</p><p><br/></p><p>散开了散开了</p>','100001','1537340570','1537340570') [ RunTime:0.0412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000561s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002409s ]
+
+[ 2018-09-19T15:02:52+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000684s ]
+NOTIC: [8] Undefined variable: products D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 111 行.
+NOTIC: [8] Undefined variable: empty D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 125 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002232s ]
+
+[ 2018-09-19T15:06:40+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0309s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0311s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `news` ORDER BY id desc LIMIT 0,10  
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `news` ORDER BY id desc LIMIT 0,10  
+
+[ 2018-09-19T15:07:16+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0238s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000386s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000756s ]
+NOTIC: [8] Undefined variable: products D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2018-09-19T15:08:17+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: product_name D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 112 行.
+NOTIC: [8] Undefined index: current D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 113 行.
+NOTIC: [8] Undefined index: lowest D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 114 行.
+NOTIC: [8] Undefined index: highest D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002491s ]
+
+[ 2018-09-19T15:09:04+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0291s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000577s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002051s ]
+
+[ 2018-09-19T15:12:02+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0319s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002415s ]
+
+[ 2018-09-19T15:14:16+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013602s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0274s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000608s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000968s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001686s ]
+
+[ 2018-09-19T15:14:27+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0197s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0228s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000367s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2018-09-19T15:14:32+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002722s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0198s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2018-09-19T15:14:39+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009848s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001776s ]
+
+[ 2018-09-19T15:14:48+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002159s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0232s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000635s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002522s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.168429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001959s ]
+
+[ 2018-09-19T15:14:54+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0272s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0265s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000554s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2018-09-19T15:14:59+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000513s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 118 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002056s ]
+
+[ 2018-09-19T15:18:23+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002645s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] Use of undefined constant news_thum - assumed 'news_thum' D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 123 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2018-09-19T15:18:44+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023555s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0253s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0251s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000360s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000687s ]
+NOTIC: [8] Use of undefined constant news_thum - assumed 'news_thum' D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 123 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002357s ]
+
+[ 2018-09-19T15:19:08+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0307s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0302s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000423s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000884s ]
+NOTIC: [8] Use of undefined constant news_thum - assumed 'news_thum' D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 123 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002480s ]
+
+[ 2018-09-19T15:23:12+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000999s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002747s ]
+
+[ 2018-09-19T15:24:49+08:00 ] 127.0.0.1 /index.php/Admin/News/Add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000416s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000741s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002530s ]
+
+[ 2018-09-19T15:24:53+08:00 ] 127.0.0.1 /index.php/Admin/News/detail?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000834s ]
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 109 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 116 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 123 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 129 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 136 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 139 行.
+NOTIC: [8] Undefined variable: images D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.173433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.173755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003170s ]
+
+[ 2018-09-19T15:25:47+08:00 ] 127.0.0.1 /index.php/Admin/News/detail?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000684s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001352s ]
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 109 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 116 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 123 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 129 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 136 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 139 行.
+NOTIC: [8] Undefined variable: news D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 150 行.
+NOTIC: [8] Undefined variable: images D:\wamp\www\waihui\Application\Runtime\Cache\Admin\b2b6fe9de466ca0ebcf5fa66ad65ac46.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.173978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002884s ]
+
+[ 2018-09-19T15:26:53+08:00 ] 127.0.0.1 /index.php/Admin/News/detail?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+
+[ 2018-09-19T15:26:57+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0299s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
+NOTIC: [8] Use of undefined constant news_thum - assumed 'news_thum' D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 123 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001863s ]
+
+[ 2018-09-19T15:26:58+08:00 ] 127.0.0.1 /index.php/Admin/News/detail?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001933s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000667s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003010s ]
+
+[ 2018-09-19T15:28:23+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0276s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000592s ]
+NOTIC: [8] Use of undefined constant news_thum - assumed 'news_thum' D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2018-09-19T15:28:25+08:00 ] 127.0.0.1 /index.php/Admin/News/detail?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003754s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `news` WHERE `news_id` = 6 LIMIT 1   [ RunTime:0.0255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000570s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003031s ]
+
+[ 2018-09-19T15:29:58+08:00 ] 127.0.0.1 /index.php/Admin/News/detail?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `news` WHERE `news_id` = 6 LIMIT 1   [ RunTime:0.0273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000734s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2018-09-19T15:30:27+08:00 ] 127.0.0.1 /index.php/Admin/News/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003027s ]
+ERR: 非法操作:edit
+
+[ 2018-09-19T15:36:42+08:00 ] 127.0.0.1 /index.php/Admin/News/detail?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `news` WHERE `news_id` = 6 LIMIT 1   [ RunTime:0.0252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000627s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001337s ]
+
+[ 2018-09-19T15:40:54+08:00 ] 127.0.0.1 /index.php/Admin/News/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006948s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0203s ]
+SQL: UPDATE `news` SET `news_title`='美国怎么了',`news_intro`='没什么概要',`news_thum`='/upload/news/5ba1f1bab6a6f.jpg',`hot`='0',`news_content`='<p>这也没什么了三年卡琳娜乐扣乐扣.</p><p><img src=\"/ueditor/php/upload/image/20180919/1537342844279749.jpg\" title=\"1537342844279749.jpg\" alt=\"back5.jpg\"/></p><p>散开了散开了</p><p><br/></p><p><br/></p><p>三看了看</p>' WHERE `news_id` = 6 [ RunTime:0.0262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000703s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003475s ]
+
+[ 2018-09-19T15:40:56+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0492s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0279s ]
+SQL: SELECT * FROM `calendar` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000544s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.185978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003417s ]
+
+[ 2018-09-19T15:41:13+08:00 ] 127.0.0.1 /index.php/Admin/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002526s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.2467s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `news` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000506s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000974s ]
+NOTIC: [8] Use of undefined constant news_thum - assumed 'news_thum' D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\f1ab1f06fc258ecdd8f34b653f68a531.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.253922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.254709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002306s ]
+
+[ 2018-09-19T15:41:16+08:00 ] 127.0.0.1 /index.php/Admin/News/detail?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `news` WHERE `news_id` = 6 LIMIT 1   [ RunTime:0.0259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000564s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000928s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002455s ]
+
+[ 2018-09-19T15:54:34+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.2610s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0319s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0303s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  ORDER BY recharge.create_time desc LIMIT 5   [ RunTime:0.0321s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  ORDER BY withdrawal.create_time desc LIMIT 5   [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `login_msg` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `login_msg` ORDER BY date desc LIMIT 7   [ RunTime:0.0316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 184 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 184 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\waihui\Application\Common\Common\function.php 第 184 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.222641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002756s ]
+

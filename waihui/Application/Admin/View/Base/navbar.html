@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="brand">
+        <a href="__MODULE__"><img src="__PUBLIC__/admin/img/logo-dark.png" alt="WaiHui Logo" class="img-responsive logo"></a>
+    </div>
+    <div class="container-fluid">
+        <div class="navbar-btn">
+            <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+        </div>
+        <div id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span>{$Think.session.admin.account}</span> <i class="icon-submenu lnr lnr-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li data-target="#updatePwd" data-toggle="modal"><a href="javascript:;"><i class="lnr lnr-cog"></i> <span>修改密码</span></a></li>
+                        <li><a href="__MODULE__/login/logout"><i class="lnr lnr-exit"></i> <span>注销</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,90 @@
+[ 2018-09-25T20:23:02+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-25T20:23:03+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001328s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-09-25T20:23:08+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-25T20:23:17+08:00 ] 127.0.0.1 /index/order/ajaxorder_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+ERR: 无法加载模块:Index
+
+[ 2018-09-25T20:23:17+08:00 ] 127.0.0.1 /index/order/get_price
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001180s ]
+ERR: 无法加载模块:Index
+
+[ 2018-09-25T20:23:17+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001764s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-25T20:23:19+08:00 ] 127.0.0.1 /index/order/orderlist?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+ERR: 无法加载模块:Index
+
+[ 2018-09-25T20:23:19+08:00 ] 127.0.0.1 /index/order/get_price
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+ERR: 无法加载模块:Index
+
+[ 2018-09-25T20:23:19+08:00 ] 127.0.0.1 /index/order/ajaxorder_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+ERR: 无法加载模块:Index
+
+[ 2018-09-25T20:23:24+08:00 ] 127.0.0.1 /index/order/ajaxorder_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+ERR: 无法加载模块:Index
+
+[ 2018-09-25T20:23:24+08:00 ] 127.0.0.1 /index/order/get_price
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+ERR: 无法加载模块:Index
+
+[ 2018-09-25T20:23:24+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-25T20:23:29+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-25T20:23:31+08:00 ] 127.0.0.1 /Public/admin/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-25T20:34:24+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+ERR: 无法加载模块:Favicon
+

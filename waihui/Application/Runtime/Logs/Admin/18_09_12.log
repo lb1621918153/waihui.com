@@ -1,0 +1,940 @@
+[ 2018-09-12T00:01:12+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.2473s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000817s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001617s ]
+
+[ 2018-09-12T00:12:24+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001643s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000410s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000775s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2018-09-12T00:12:30+08:00 ] 127.0.0.1 /index.php/Admin/Recharge/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `recharge` WHERE `recharge_id` = 1 LIMIT 1   [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0300s ]
+SQL: UPDATE `user` SET `money`=money+100 WHERE `id` = 100001 [ RunTime:0.0294s ]
+
+[ 2018-09-12T00:12:31+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0291s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0277s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000631s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002363s ]
+
+[ 2018-09-12T00:12:34+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000917s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.157696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003389s ]
+
+[ 2018-09-12T00:12:43+08:00 ] 127.0.0.1 /index.php/Admin/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000421s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000779s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001752s ]
+
+[ 2018-09-12T00:14:08+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0197s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000498s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001788s ]
+
+[ 2018-09-12T00:14:46+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002218s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000640s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002094s ]
+
+[ 2018-09-12T00:14:55+08:00 ] 127.0.0.1 /index.php/Admin/Recharge/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `recharge` WHERE `recharge_id` = 1 LIMIT 1   [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0197s ]
+SQL: UPDATE `user` SET `money`=money+100 WHERE `id` = 100001 [ RunTime:0.0189s ]
+SQL: UPDATE `recharge` SET `user_id`='100001',`money`='100',`status`='1',`msg`=NULL,`detail`='汇款单号：1024651651。充值金额100元',`create_time`='1536678042',`update_time`='1536678042' WHERE `recharge_id` = 1 [ RunTime:0.0219s ]
+
+[ 2018-09-12T00:14:55+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2018-09-12T00:15:06+08:00 ] 127.0.0.1 /index.php/Admin/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001641s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0251s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000365s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000700s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.203053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.203543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009175s ]
+
+[ 2018-09-12T18:53:05+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.047201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.052439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053026s ]
+
+[ 2018-09-12T18:53:05+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003900s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.272933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.273417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025765s ]
+
+[ 2018-09-12T18:53:11+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002541s ]
+
+[ 2018-09-12T18:53:27+08:00 ] 127.0.0.1 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0257s ]
+SQL: UPDATE `admin` SET `account`='admin',`password`='admin',`power`='2',`login_time`='1536749607' WHERE `id` = 1 [ RunTime:0.0480s ]
+
+[ 2018-09-12T18:53:27+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000835s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.207639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.208066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002487s ]
+
+[ 2018-09-12T18:53:35+08:00 ] 127.0.0.1 /index.php/Admin/bankCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+SQL: SHOW COLUMNS FROM `bank_card` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `bank_card`  [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001535s ]
+
+[ 2018-09-12T18:53:40+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0261s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000410s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000724s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.197529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.197967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001945s ]
+
+[ 2018-09-12T18:53:56+08:00 ] 127.0.0.1 /index.php/Admin/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002168s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0222s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000609s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.155645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001871s ]
+
+[ 2018-09-12T18:54:06+08:00 ] 127.0.0.1 /index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `admin` WHERE `power` = 1  [ RunTime:0.0202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.157233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.157680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2018-09-12T18:54:09+08:00 ] 127.0.0.1 /index.php/Admin/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000583s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2018-09-12T18:54:12+08:00 ] 127.0.0.1 /index.php/Admin/User/detail?id=100001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001626s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001580s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001896s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003933s ]
+
+[ 2018-09-12T22:11:33+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.056599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.057105s ]
+
+[ 2018-09-12T22:11:33+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001849s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.199815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024834s ]
+
+[ 2018-09-12T22:11:38+08:00 ] 127.0.0.1 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0268s ]
+SQL: UPDATE `admin` SET `account`='admin',`password`='admin',`power`='2',`login_time`='1536761498' WHERE `id` = 1 [ RunTime:0.0383s ]
+
+[ 2018-09-12T22:11:38+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001941s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000854s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.207703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.208089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001966s ]
+
+[ 2018-09-12T22:12:33+08:00 ] 127.0.0.1 /index.php/Admin/bankCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+SQL: SHOW COLUMNS FROM `bank_card` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `bank_card`  [ RunTime:0.0271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000707s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.275396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.275831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008152s ]
+
+[ 2018-09-12T22:12:56+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030504s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.2603s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000725s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.341818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.342111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016848s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.034143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.034558s ]
+
+[ 2018-09-12T22:13:35+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000832s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.173946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002202s ]
+
+[ 2018-09-12T22:14:00+08:00 ] 127.0.0.1 /index.php/Admin/Recharge/refuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002176s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0248s ]
+SQL: UPDATE `recharge` SET `status`='-1' WHERE `recharge_id` = 1 [ RunTime:0.0244s ]
+
+[ 2018-09-12T22:14:01+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004022s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000546s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000964s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.180855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003621s ]
+
+[ 2018-09-12T22:15:53+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000493s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000896s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002855s ]
+
+[ 2018-09-12T22:16:15+08:00 ] 127.0.0.1 /index.php/Admin/Recharge/refuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0279s ]
+SQL: UPDATE `recharge` SET `msg`='并没有受到对应的汇款信息',`status`='-1' WHERE `recharge_id` = 1 [ RunTime:0.0318s ]
+
+[ 2018-09-12T22:16:16+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0291s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000554s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.218938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003336s ]
+
+[ 2018-09-12T22:27:42+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003821s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0244s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000612s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.285749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.286067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035561s ]
+
+[ 2018-09-12T22:31:38+08:00 ] 127.0.0.1 /index.php/Admin/withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0227s ]
+ERR: 1054:Unknown column 'withdrawal.money' in 'field list'
+ [ SQL语句 ] : SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10  
+ERR: 1054:Unknown column 'withdrawal.money' in 'field list'
+ [ SQL语句 ] : SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10  
+
+[ 2018-09-12T22:33:15+08:00 ] 127.0.0.1 /index.php/Admin/withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0315s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0284s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000411s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000687s ]
+NOTIC: [8] Undefined variable: recharges D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.157012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2018-09-12T22:42:17+08:00 ] 127.0.0.1 /index.php/Admin/withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002951s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0224s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000395s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000693s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 126 行.
+NOTIC: [8] Undefined variable: Array D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.198877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003454s ]
+
+[ 2018-09-12T22:42:43+08:00 ] 127.0.0.1 /index.php/Admin/withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0231s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000598s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 126 行.
+NOTIC: [8] Undefined variable: Array D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002161s ]
+
+[ 2018-09-12T22:43:16+08:00 ] 127.0.0.1 /index.php/Admin/withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.2490s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0247s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000612s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 126 行.
+NOTIC: [8] Undefined variable: Array D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002906s ]
+
+[ 2018-09-12T22:43:34+08:00 ] 127.0.0.1 /index.php/Admin/withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002257s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0267s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Undefined variable: recharge D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 130 行.
+NOTIC: [8] Undefined variable: recharge D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 133 行.
+NOTIC: [8] Undefined index: recharge_id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.167129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.167535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001403s ]
+
+[ 2018-09-12T22:43:39+08:00 ] 127.0.0.1 /index.php/Admin/user/detail?id=100001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0289s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000947s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001584s ]
+
+[ 2018-09-12T22:43:43+08:00 ] 127.0.0.1 /index.php/Admin/user/detail?id=100001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002799s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `user` WHERE `id` = 100001 LIMIT 1   [ RunTime:0.0253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000510s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000843s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002372s ]
+
+[ 2018-09-12T22:47:15+08:00 ] 127.0.0.1 /index.php/Admin/withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0252s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0234s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Undefined variable: recharge D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 130 行.
+NOTIC: [8] Undefined variable: recharge D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 133 行.
+NOTIC: [8] Undefined index: recharge_id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001212s ]
+
+[ 2018-09-12T22:54:57+08:00 ] 127.0.0.1 /index.php/Admin/withdrawal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0281s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  LIMIT 0,10   [ RunTime:0.0265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000356s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+NOTIC: [8] Undefined variable: recharge D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 130 行.
+NOTIC: [8] Undefined variable: recharge D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 133 行.
+NOTIC: [8] Undefined index: recharge_id D:\wamp\www\waihui\Application\Runtime\Cache\Admin\a01e243d565a020d71903d5eb80091e2.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002493s ]
+
+[ 2018-09-12T23:22:44+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000810s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001936s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002287s ]
+

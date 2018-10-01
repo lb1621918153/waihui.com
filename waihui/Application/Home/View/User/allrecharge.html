@@ -1,0 +1,93 @@
+<include file="Base/css"/>
+<link rel="stylesheet" href="__PUBLIC__/admin/css/bootstrap.min.css">
+<style>
+    .usermain {
+        width: 80%;
+    }
+</style>
+
+<body class="me">
+<!-- 头部 -->
+<include file="Base/header"/>
+<div class="main_box">
+    <!-- 左侧栏 -->
+    <include file="Base/user_sidebar"/>
+    <!-- 中间主体 -->
+    <div class="usermain right_userpay">
+        <div class="chongzhi">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th width="80">充值单号</th>
+                    <th width="80">充值金额</th>
+                    <th>汇款信息</th>
+                    <th>充值信息</th>
+                    <th width="100">充值状态</th>
+                    <th width="150">创建时间</th>
+                    <th width="150">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="recharges" id="recharge">
+                    <tr>
+                        <td>{$recharge.recharge_id}</td>
+                        <td>￥{$recharge.money}</td>
+                        <td>{$recharge.detail|showLimitMsg=30}</td>
+                        <td>{$recharge.msg}</td>
+                        <td>{$recharge.status|showRechargeStatus}</td>
+                        <td>{$recharge.create_time|showDateTime}</td>
+                        <td>
+                            <button type="button" class="btn btn-danger" <if condition="$recharge.status eq 1">disabled</if> onclick="delRecharge(this)" data-id="{$recharge.recharge_id}">删除</button>
+                            <button type="button" class="btn btn-info" onclick="location.href = '__CONTROLLER__/editrecharge/id/{$recharge.recharge_id}'" <if condition="$recharge.status eq 1">disabled</if>>编辑</button>
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <if condition="$recharges">
+                <div class="text-center">
+                    <div class="pages">
+                        {$page}
+                    </div>
+                </div>
+            </if>
+        </div>
+    </div>
+</div>
+<!-- 页脚 -->
+<include file="Base/footer"/>
+
+<include file="Base/script"/>
+<script>
+    function delRecharge(ref) {
+        var id = $(ref).attr('data-id');
+        layer.open({
+            icon: 3,
+            content: '是否删除充值单号为 "' + id + '"的数据？',
+            btn: ['确定', '取消'],
+            yes: function (index, layero) {
+                $.post('__CONTROLLER__/delrecharge', {id: id}, function (res) {
+                    if (res.code === 0) {
+                        layer.open({
+                            icon: 1,
+                            content: res.msg
+                        });
+                        $(ref).parent().parent().remove();
+                    } else {
+                        layer.open({
+                            icon: 2,
+                            content: res.msg
+                        })
+                    }
+                }, 'json').error(function (err) {
+                    layer.open({
+                        icon: 2,
+                        content: '请求失败'
+                    })
+                });
+            }
+        });
+    }
+</script>
+</body>
+</html>

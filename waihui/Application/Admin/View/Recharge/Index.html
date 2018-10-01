@@ -1,0 +1,145 @@
+    <include file="Base/css"/>
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <include file="Base/navbar"/>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <include file="Base/sidebar"/>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <h3 class="page-title">充值管理</h3>
+                <div>
+                    <!-- BORDERED TABLE -->
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">充值信息表</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>充值单号</th>
+                                    <th>用户昵称</th>
+                                    <th>充值金额</th>
+                                    <th>充值信息</th>
+                                    <th>状态</th>
+                                    <th>创建时间</th>
+                                    <th width="200">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="recharges" id="recharge" empty="$empty">
+                                <tr class="user-table-font-size">
+                                    <td>{$recharge.recharge_id}</td>
+                                    <td><a href="__MODULE__/user/detail?id={$recharge.user_id}">{$recharge.username}</a></td>
+                                    <td>￥{$recharge.money}</td>
+                                    <td title="{$recharge.detail}">{$recharge.detail|showLimitMsg}</td>
+                                    <td <if condition="$recharge.status eq -1">title="{$recharge.msg}"</if>>{$recharge.status|showRechargeStatus}</td>
+                                    <td>{$recharge.create_time|showDateTime}</td>
+                                    <td>
+                                        <button <if condition="$recharge.status neq 0">disabled</if> type="button" class="btn btn-danger" data-id="{$recharge.recharge_id}" data-toggle="modal" data-target="#writeIntro" title="拒绝提现请求，需填写拒绝信息" onclick="refuse(this)">
+                                            拒绝
+                                        </button>
+                                        <button <if condition="$recharge.status neq 0">disabled</if> type="button" class="btn btn-primary" data-id="{$recharge.recharge_id}" title="确认提现" onclick="recharge(this)">
+                                            确认
+                                        </button>
+                                    </td>
+                                </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+
+                            <div class="pages">
+                                {$page}
+                            </div>
+                        </div>
+                        <!-- END BORDERED TABLE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <include file="Base/footer"/>
+</div>
+<div id="writeIntro" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="writeIntro">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">填写拒绝理由</h4>
+            </div>
+            <div class="modal-body">
+                <textarea id="msg" class="form-control" placeholder="例如：没有查询到对应的汇款信息或者汇款信息不对" rows="5"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button id="refuseBtn" type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<include file="Base/script"/>
+<script>
+    const SCOPE = {
+        updatePwdUrl: '__MODULE__/admin/update',
+        deleteDataUrl: '__CONTROLLER__/del',
+        showDataUrl: '__CONTROLLER__/detail',
+        refuseRechargeUrl: '__CONTROLLER__/refuse',
+        rechargeUrl: '__CONTROLLER__/recharge',
+    };
+
+    function refuse(ref) {
+        $("#refuseBtn").attr('data-id', $(ref).attr('data-id'));
+    }
+
+    $("#refuseBtn").click(function () {
+        var ref = $(this);
+        var id = ref.attr('data-id');
+        var msg = $("#msg").val();
+        if (msg === '') {
+            alert("请填写拒绝理由");
+            return;
+        }
+        $.post(SCOPE.refuseRechargeUrl, {id: id, msg: msg}, function (res) {
+            if (res.code === 0) {
+                location.reload();
+            }
+            showTip(res.msg);
+        }, 'json')
+            .error(function (err) {
+                showTip('请求失败');
+            })
+            .complete(function () {
+                $("#intro").val('');
+                ref.attr('data-id', '');
+            });
+    });
+
+    function recharge(ref) {
+        if (confirm("确认充值?")) {
+            var id = $(ref).attr('data-id');
+            $.post(SCOPE.rechargeUrl, {id: id}, function (res) {
+                showTip(res.msg);
+                if (res.code === 0) {
+                    location.reload();
+                }
+            }, 'json')
+                .error(function (err) {
+                    showTip('请求失败');
+                });
+        }
+    }
+</script>
+</body>
+</html>

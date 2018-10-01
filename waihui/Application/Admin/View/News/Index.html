@@ -1,0 +1,93 @@
+    <include file="Base/css"/>
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <include file="Base/navbar"/>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <include file="Base/sidebar"/>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <h3 class="page-title">财经新闻管理</h3>
+                <div>
+                    <!-- BORDERED TABLE -->
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3 class="panel-title">财经新闻表</h3>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <a href="__CONTROLLER__/Add" class="btn btn-primary">添加财经新闻</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>新闻名称</th>
+                                    <th>新闻缩略图</th>
+                                    <th width="70">是否热点新闻</th>
+                                    <th width="200">创建时间</th>
+                                    <th width="200">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="newses" id="news" empty="$empty">
+                                <tr class="user-table-font-size">
+                                    <td>{$news.news_title}</td>
+                                    <td>
+                                        <if condition="$news.news_thum">
+                                            <img src="__PUBLIC__{$news.news_thum}" alt="缩略图" width="80">
+                                            <else/>
+                                            没有缩略图
+                                        </if>
+                                    </td>
+                                    <td>{$news.hot|hotMsg}</td>
+                                    <td>{$news.create_time|showDateTime}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger" data-id="{$news.news_id}" title="删除后不可找回" onclick="delData(this)">
+                                            删除
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-id="{$news.news_id}" onclick="showData(this)">
+                                            编辑
+                                        </button>
+                                    </td>
+                                </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+
+                            <div class="pages">
+                                {$page}
+                            </div>
+                        </div>
+                        <!-- END BORDERED TABLE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <include file="Base/footer"/>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<include file="Base/script"/>
+<script>
+    const SCOPE = {
+        updatePwdUrl: '__MODULE__/Admin/update',
+        deleteDataUrl: '__CONTROLLER__/del',
+        showDataUrl: '__CONTROLLER__/detail',
+    };
+</script>
+</body>
+</html>

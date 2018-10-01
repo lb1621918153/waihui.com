@@ -1,0 +1,154 @@
+[ 2018-09-26T14:20:45+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000860s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2018-09-26T14:20:46+08:00 ] 127.0.0.1 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0207s ]
+SQL: UPDATE `admin` SET `account`='admin',`password`='admin',`power`='2',`login_time`='1537942846' WHERE `id` = 1 [ RunTime:0.0251s ]
+
+[ 2018-09-26T14:20:47+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0297s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0291s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.2581s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0279s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  ORDER BY recharge.create_time desc LIMIT 5   [ RunTime:0.0283s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  ORDER BY withdrawal.create_time desc LIMIT 5   [ RunTime:0.0283s ]
+SQL: SHOW COLUMNS FROM `login_msg` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `login_msg` ORDER BY date desc LIMIT 7   [ RunTime:0.0287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\waihui\Application\Common\Common\function.php 第 198 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\waihui\Application\Common\Common\function.php 第 198 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\waihui\Application\Common\Common\function.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.257532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.257644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002168s ]
+
+[ 2018-09-26T14:20:51+08:00 ] 127.0.0.1 /index.php/Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003616s ]
+
+[ 2018-09-26T14:20:57+08:00 ] 127.0.0.1 /index.php/Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0256s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.0245s ]
+SQL: SHOW COLUMNS FROM `withdrawal` [ RunTime:0.0277s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `withdrawal` LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  ORDER BY recharge.create_time desc LIMIT 5   [ RunTime:0.0262s ]
+SQL: SELECT `withdrawal_id`,`user_id`,`username`,withdrawal.money,withdrawal.status,`msg`,withdrawal.create_time FROM `withdrawal` INNER JOIN user ON id = user_id  ORDER BY withdrawal.create_time desc LIMIT 5   [ RunTime:0.0266s ]
+SQL: SHOW COLUMNS FROM `login_msg` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `login_msg` ORDER BY date desc LIMIT 7   [ RunTime:0.0246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\waihui\Application\Common\Common\function.php 第 198 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\waihui\Application\Common\Common\function.php 第 198 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\waihui\Application\Common\Common\function.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001544s ]
+
+[ 2018-09-26T14:21:16+08:00 ] 127.0.0.1 /index.php/Admin/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001816s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003205s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT `order_id`,`username`,`product_name`,`price`,`order`.status,`kind`,`sellprice`,`order`.create_time FROM `order` INNER JOIN product on product.id=order.product_id  INNER JOIN user on user.id=order.user_id  ORDER BY `order`.create_time desc LIMIT 0,10   [ RunTime:0.0268s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001964s ]
+

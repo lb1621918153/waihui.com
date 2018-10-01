@@ -1,0 +1,87 @@
+<include file="Base/css"/>
+<link rel="stylesheet" href="__PUBLIC__/admin/css/bootstrap.min.css">
+
+<body class="me">
+<!-- 头部 -->
+<include file="Base/header"/>
+<div class="main_box">
+    <!-- 左侧栏 -->
+    <include file="Base/user_sidebar"/>
+    <!-- 中间主体 -->
+    <div class="usermain right_userpay">
+        <div class="chongzhi">
+
+            <div class="ul_title"><span></span>请向以下任一银行卡转账，转账成功后，输入转账信息</div>
+            <br>
+            <div class="bank">
+                <volist name="bankCards" id="bankCard">
+                    <span>{$bankCard.bank_card_num}</span>
+                </volist>
+            </div>
+
+            <br>
+            <br>
+            <form id="form">
+                <input type="hidden" name="recharge_id" value="{$recharge.recharge_id}">
+                <div class="ul_title"><span></span>充值金额</div>
+                <br>
+                <div class="form-inline">
+                    <input type="number" name="money" class="form-control" value="{$recharge.money}">
+                </div>
+                <br>
+                <div class="ul_title"><span></span>汇款信息</div>
+                <br>
+                <textarea name="detail" class="form-control" rows="3">{$recharge.detail}</textarea>
+                <br>
+                <div class="text-center">
+                    <button class="btn btn-primary" type="button" onclick="edit()">重新提交审核</button>
+                </div>
+                <br>
+                <div class="text-right">
+                    <button class="btn btn-info" type="button" onclick="location.href = '__CONTROLLER__/allrecharge'">查看充值记录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 页脚 -->
+<include file="Base/footer"/>
+
+<include file="Base/script"/>
+<script>
+    function edit() {
+        var formData = new FormData(document.getElementById('form'));
+        $.ajax({
+            url: '',
+            type: 'post',
+            data: formData,
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            success: function (res) {
+                if (res.code === 0) {
+                    layer.open({
+                        icon: 1,
+                        content: res.msg,
+                        yes: function () {
+                            location.href = '__CONTROLLER__/allrecharge';
+                        }
+                    });
+                } else {
+                    layer.open({
+                        icon: 2,
+                        content: res.msg
+                    });
+                }
+            },
+            error: function (err) {
+                layer.open({
+                    icon: 2,
+                    content: '请求失败'
+                });
+            }
+        });
+    }
+</script>
+</body>
+</html>

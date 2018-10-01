@@ -1,0 +1,1586 @@
+[ 2018-09-14T00:04:38+08:00 ] 127.0.0.1 /Admin/Calendar/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+
+[ 2018-09-14T00:07:59+08:00 ] 127.0.0.1 /Admin/Calendar/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007051s ]
+
+[ 2018-09-14T00:11:43+08:00 ] 127.0.0.1 /Admin/Calendar/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001632s ]
+
+[ 2018-09-14T00:11:52+08:00 ] 127.0.0.1 /Admin/Calendar/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001048s ]
+
+[ 2018-09-14T00:13:30+08:00 ] 127.0.0.1 /Admin/Calendar/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001476s ]
+
+[ 2018-09-14T00:18:08+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0238s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.2447s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000677s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2018-09-14T00:18:13+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000398s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000715s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001789s ]
+
+[ 2018-09-14T00:21:06+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.2545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000529s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001991s ]
+
+[ 2018-09-14T00:21:23+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002302s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002309s ]
+
+[ 2018-09-14T00:24:15+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000395s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000647s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001816s ]
+
+[ 2018-09-14T00:24:35+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000428s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000990s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001666s ]
+
+[ 2018-09-14T00:24:57+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003268s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000601s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000988s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.226237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.226679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006022s ]
+
+[ 2018-09-14T00:25:11+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001795s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0257s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000618s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002032s ]
+
+[ 2018-09-14T00:27:18+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.2532s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000604s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001777s ]
+
+[ 2018-09-14T00:27:25+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001991s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000428s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000750s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003354s ]
+
+[ 2018-09-14T00:28:03+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003033s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0294s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0289s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000558s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000872s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002568s ]
+
+[ 2018-09-14T00:28:26+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002417s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000374s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000647s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003432s ]
+
+[ 2018-09-14T00:28:37+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003765s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000709s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002853s ]
+
+[ 2018-09-14T00:29:00+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000617s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2018-09-14T00:29:48+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002658s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000596s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003863s ]
+
+[ 2018-09-14T00:30:28+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000565s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000917s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002286s ]
+
+[ 2018-09-14T00:33:07+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000644s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005413s ]
+
+[ 2018-09-14T00:34:11+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0279s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001609s ]
+
+[ 2018-09-14T00:34:18+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002322s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001756s ]
+
+[ 2018-09-14T00:38:14+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000643s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002052s ]
+
+[ 2018-09-14T00:38:43+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003510s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004371s ]
+
+[ 2018-09-14T00:39:09+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002372s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.222358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002372s ]
+
+[ 2018-09-14T00:39:39+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0265s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2018-09-14T00:39:51+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0328s ]
+SQL: UPDATE `calendar` SET `area`='/Public/upload/calendar/american.png',`date`='2018-09-04',`time`='04:30',`name`='美国至8月27日当周货币供给M1(亿美元)',`before_value`='-137',`expected`='180',`announce`='275',`effect`='利空 金银 原油' WHERE `id` = 1 [ RunTime:0.0521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2018-09-14T00:39:52+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001606s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0329s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0325s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0325s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000683s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2018-09-14T00:42:15+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002477s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0249s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000701s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001979s ]
+
+[ 2018-09-14T00:42:17+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002045s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000355s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000639s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001772s ]
+
+[ 2018-09-14T00:42:34+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0269s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000356s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002033s ]
+
+[ 2018-09-14T00:42:52+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0255s ]
+SQL: UPDATE `calendar` SET `area`='/upload/calendar/britain.png',`date`='2018-09-04',`time`='04:30',`name`='美国至8月27日当周货币供给M1(亿美元)',`before_value`='-137',`expected`='180',`announce`='275',`effect`='利空 金银 原油' WHERE `id` = 1 [ RunTime:0.0304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001660s ]
+
+[ 2018-09-14T00:42:54+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000337s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000638s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002416s ]
+
+[ 2018-09-14T00:43:36+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000379s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002270s ]
+
+[ 2018-09-14T00:43:40+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0239s ]
+SQL: UPDATE `calendar` SET `area`='/upload/calendar/britain.png',`date`='2018-09-04',`time`='04:30',`name`='美国至8月27日当周货币供给M1(亿美元)',`before_value`='-137',`expected`='0',`announce`='275',`effect`='利空 金银 原油' WHERE `id` = 1 [ RunTime:0.0436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000965s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008536s ]
+
+[ 2018-09-14T00:43:42+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0225s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000328s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003317s ]
+
+[ 2018-09-14T00:44:44+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001963s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004379s ]
+
+[ 2018-09-14T00:44:59+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002036s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.2423s ]
+SQL: UPDATE `calendar` SET `area`='/upload/calendar/britain.png',`date`='2018-09-04',`time`='04:30',`name`='美国至8月27日当周货币供给M1(亿美元)',`before_value`='-137',`expected`='0',`announce`='275',`effect`='利空 金银 原油' WHERE `id` = 1 [ RunTime:0.0218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000883s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2018-09-14T00:45:00+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002797s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0263s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000374s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000693s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002908s ]
+
+[ 2018-09-14T00:46:11+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002247s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0281s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0278s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002592s ]
+
+[ 2018-09-14T00:46:13+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000710s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001773s ]
+
+[ 2018-09-14T00:46:18+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0327s ]
+SQL: UPDATE `calendar` SET `area`='/upload/calendar/britain.png',`date`='2018-09-04',`time`='04:30',`name`='美国至8月27日当周货币供给M1(亿美元)',`before_value`='-137',`expected`='0',`announce`='275',`effect`='利空 金银 原油' WHERE `id` = 1 [ RunTime:0.0319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2018-09-14T00:46:19+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000398s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000722s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002146s ]
+
+[ 2018-09-14T00:47:00+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000478s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000784s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002740s ]
+
+[ 2018-09-14T00:47:03+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001734s ]
+
+[ 2018-09-14T00:47:22+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002449s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000429s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000880s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001818s ]
+
+[ 2018-09-14T00:47:24+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001873s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000693s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002655s ]
+
+[ 2018-09-14T00:47:26+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002347s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001615s ]
+
+[ 2018-09-14T00:48:53+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001852s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000358s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000649s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001741s ]
+
+[ 2018-09-14T00:48:57+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001774s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0308s ]
+SQL: UPDATE `calendar` SET `area`='/upload/calendar/britain.png',`date`='2018-09-04',`time`='04:30',`name`='美国至8月27日当周货币供给M1(亿美元)',`before_value`='-137',`expected`=NULL,`announce`='275',`effect`='利空 金银 原油' WHERE `id` = 1 [ RunTime:0.0303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2018-09-14T00:48:59+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0258s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000581s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002732s ]
+
+[ 2018-09-14T10:08:33+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041736s ]
+
+[ 2018-09-14T10:08:33+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000565s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.261460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.261812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020650s ]
+
+[ 2018-09-14T10:08:37+08:00 ] 127.0.0.1 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002032s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0206s ]
+SQL: UPDATE `admin` SET `account`='admin',`password`='admin',`power`='2',`login_time`='1536890917' WHERE `id` = 1 [ RunTime:0.0457s ]
+
+[ 2018-09-14T10:08:37+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000969s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.196288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.196668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003269s ]
+
+[ 2018-09-14T10:09:20+08:00 ] 127.0.0.1 /index.php/Admin/calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004411s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0275s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003574s ]
+
+[ 2018-09-14T10:12:45+08:00 ] 127.0.0.1 /index.php/Admin/calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000539s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001390s ]
+
+[ 2018-09-14T10:12:48+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+ERR: 非法操作:add
+
+[ 2018-09-14T10:13:03+08:00 ] 127.0.0.1 /index.php/Admin/calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002853s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0284s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002381s ]
+
+[ 2018-09-14T10:20:55+08:00 ] 127.0.0.1 /index.php/Admin/calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002221s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0238s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0224s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000766s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.197539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.198109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003598s ]
+
+[ 2018-09-14T10:20:57+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000502s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000804s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004936s ]
+
+[ 2018-09-14T10:26:10+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000656s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001776s ]
+
+[ 2018-09-14T10:26:41+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0206s ]
+SQL: INSERT INTO `calendar` (`area`,`date`,`time`,`name`,`before_value`,`expected`,`announce`,`effect`) VALUES ('/upload/calendar/germany.png','2018-09-12','09:30','毫无意义','-120','0','0','利空 原油') [ RunTime:0.0232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002098s ]
+
+[ 2018-09-14T10:26:42+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001724s ]
+
+[ 2018-09-14T10:31:12+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001723s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000652s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001922s ]
+
+[ 2018-09-14T10:31:18+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002262s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0194s ]
+SQL: UPDATE `calendar` SET `area`='/upload/calendar/germany.png',`date`='2018-09-12',`time`='09:30',`name`='毫无意义',`before_value`='-120',`expected`=NULL,`announce`=NULL,`effect`='利空 原油' WHERE `id` = 3 [ RunTime:0.0516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001647s ]
+
+[ 2018-09-14T10:31:20+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0244s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002754s ]
+
+[ 2018-09-14T10:31:37+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/detail?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `calendar` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000328s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001625s ]
+
+[ 2018-09-14T10:31:41+08:00 ] 127.0.0.1 /index.php/Admin/Calendar/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\wamp\www\waihui\Application\Admin\Controller\CalendarController.class.php on line 26 and defined D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\wamp\www\waihui\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0343s ]
+SQL: UPDATE `calendar` SET `area`='/upload/calendar/germany.png',`date`='2018-09-12',`time`='09:30',`name`='毫无意义',`before_value`='-120',`expected`=NULL,`announce`=NULL,`effect`='利空 原油' WHERE `id` = 3 [ RunTime:0.0399s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003121s ]
+
+[ 2018-09-14T10:31:42+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0223s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000664s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2018-09-14T10:33:58+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0305s ]
+SQL: SELECT * FROM `calendar` LIMIT 0,10   [ RunTime:0.0306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000529s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003258s ]
+
+[ 2018-09-14T10:41:08+08:00 ] 127.0.0.1 /Admin/Calendar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+SQL: SHOW COLUMNS FROM `calendar` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `calendar` LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT * FROM `calendar` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000512s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001862s ]
+
+[ 2018-09-14T10:43:11+08:00 ] 127.0.0.1 /index.php/Admin/recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `recharge` [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `recharge` LIMIT 1   [ RunTime:0.2442s ]
+SQL: SELECT `recharge_id`,`user_id`,`username`,recharge.money,recharge.status,`msg`,`detail`,recharge.create_time FROM `recharge` INNER JOIN user ON id = user_id  ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.178461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001421s ]
+

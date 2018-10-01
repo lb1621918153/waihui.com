@@ -1,0 +1,102 @@
+    <include file="Base/css"/>
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <include file="Base/navbar"/>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <include file="Base/sidebar"/>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <h3 class="page-title">用户管理</h3>
+                <div>
+                    <!-- BORDERED TABLE -->
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <h3 class="panel-title">用户实名信息认证表</h3>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>ID号</th>
+                                    <th>用户昵称</th>
+                                    <th>真实姓名</th>
+                                    <th>身份证号</th>
+                                    <th width="220">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="verifyUsers" id="user">
+                                <tr class="user-table-font-size">
+                                    <td>{$user.id}</td>
+                                    <td><a href="__CONTROLLER__/verify/id/{$user.id}">{$user.username}</a></td>
+                                    <td>{$user.true_name}</td>
+                                    <td>{$user.true_id}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger" data-id="{$user.id}" title="" onclick="refuseVerify(this)">
+                                            拒绝
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-id="{$user.id}" title="" onclick="doVerify(this)">
+                                            确认
+                                        </button>
+                                    </td>
+                                </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- END BORDERED TABLE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <include file="Base/footer"/>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<include file="Base/script"/>
+<script>
+    const SCOPE = {
+        updatePwdUrl: '__MODULE__/admin/update',
+        doVerifyUrl: '__CONTROLLER__/doVerify',
+        refuseVerifyUrl: '__CONTROLLER__/refuseVerify',
+    };
+
+    function doVerify(ref) {
+        var id = $(ref).attr('data-id');
+        $.post(SCOPE.doVerifyUrl, {id: id}, function (res) {
+            if (res.code === 0) {
+                location.reload();
+            }
+            showTip(res.msg);
+        }, 'json').error(function (err) {
+           showTip('请求失败');
+        });
+    }
+
+    function refuseVerify(ref) {
+        var id = $(ref).attr('data-id');
+        $.post(SCOPE.refuseRechargeUrl, {id: id}, function (res) {
+            if (res.code === 0) {
+                location.reload();
+            }
+            showTip(res.msg);
+        }, 'json').error(function (err) {
+            showTip('请求失败');
+        });
+    }
+</script>
+</body>
+</html>

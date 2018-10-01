@@ -1,0 +1,222 @@
+[ 2018-09-19T14:10:50+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-09-19T14:11:01+08:00 ] 127.0.0.1 /Amind/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004388s ]
+ERR: 无法加载模块:Amind
+
+[ 2018-09-19T14:13:29+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003185s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:14:22+08:00 ] 127.0.0.1 /Public/assets/img/profile-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:31:40+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-09-19T14:42:21+08:00 ] 127.0.0.1 /Public/admin/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002612s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/american.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001812s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/china.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001463s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/5b9a87a4130ac.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001896s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/britain.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/canada.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001390s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/australia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002116s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/europe.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/france.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001408s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/germany.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/italy.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001218s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/japan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003459s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T14:53:23+08:00 ] 127.0.0.1 /Public/upload/news/singapore.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001914s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T15:02:51+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003197s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-09-19T15:42:22+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T15:54:37+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002440s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T15:55:04+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001532s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T16:31:16+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002473s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T16:32:35+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001961s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:34:20+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-09-19T22:34:25+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:34:30+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:37:31+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004127s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:37:53+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:38:00+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001146s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:38:37+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002385s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:39:04+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001218s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:41:48+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:42:18+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001937s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:42:20+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001202s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:43:22+08:00 ] 127.0.0.1 /Public/home/asset/images/line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003188s ]
+ERR: 无法加载模块:Public
+
+[ 2018-09-19T22:43:23+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001231s ]
+ERR: 无法加载模块:Favicon
+
